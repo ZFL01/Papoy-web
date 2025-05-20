@@ -77,19 +77,23 @@ body {
   color: #0d6efd;
 }
 
+/* Efek hover pada brand navbar */
 .navbar-brand:hover {
   opacity: 0.8;
 }
 
+/* Highlight menu aktif */
 .navbar-light .navbar-nav .nav-link.active {
   color: #0d6efd !important;
   font-weight: bold;
   border-bottom: 2px solid #0d6efd;
 }
+
 body.dark-mode {
   background: #181a1b !important;
   color: #e0e0e0 !important;
 }
+
 .dark-mode .bg-nav,
 .dark-mode .navbar,
 .dark-mode .footer,
@@ -98,28 +102,53 @@ body.dark-mode {
   background-color: #23272b !important;
   color: #e0e0e0 !important;
 }
+
 .dark-mode .navbar-light .navbar-nav .nav-link,
 .dark-mode .navbar-brand span,
 .dark-mode .footer .copyright a,
 .dark-mode .footer .link a {
   color: #e0e0e0 !important;
 }
+
 .dark-mode .card {
   border-color: #343a40 !important;
 }
+
 .dark-mode .btn-social-media {
   background-color: #343a40 !important;
   color: #e0e0e0 !important;
   border-color: #343a40 !important;
 }
+
 .dark-mode .btn-social-media:hover {
   background-color: #0d6efd !important;
   color: #fff !important;
 }
+
 .dark-mode .form-control,
 .dark-mode input,
 .dark-mode textarea {
   background-color: #23272b !important;
   color: #e0e0e0 !important;
   border-color: #343a40 !important;
+}
+
+.navbar {
+  transition: box-shadow 0.2s;
+}
+
+.navbar.fixed-top {
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  z-index: 1030;
+}
+
+body {
+  padding-top: 100px;
+  /* Sesuaikan dengan tinggi navbar */
+}
+
+@media (max-width: 991.98px) {
+  body {
+    padding-top: 120px;
+  }
 }

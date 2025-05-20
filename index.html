@@ -23,10 +23,38 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+      .navbar {
+        transition: box-shadow 0.2s;
+      }
+      .navbar.fixed-top {
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+        z-index: 1030;
+      }
+      body {
+        padding-top: 100px;
+      }
+      @media (max-width: 991.98px) {
+        body {
+          padding-top: 120px;
+        }
+      }
+      .slide-in {
+        opacity: 0;
+        transform: translateX(60px);
+        transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+          transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .slide-in.show {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    </style>
   </head>
   <body id="home" class="d-flex flex-column h-100">
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light py-4 bg-nav">
+    <nav
+      class="navbar navbar-expand-lg navbar-light py-4 bg-nav fixed-top shadow-sm"
+    >
       <div class="container">
         <a class="navbar-brand" href="#home">
           <img
@@ -67,39 +95,39 @@
               <a class="nav-link mx-3" href="#contact">Kontak</a>
             </li>
           </ul>
-        <div class="d-flex mt-3 ms-3 mt-md-0 ms-md-0">
-          <a
-            href="https://www.instagram.com/papoyice/"
-            target="_blank"
-            class="btn btn-social-media me-3"
-            ><i class="bi bi-instagram"></i
-          ></a>
-          <a
-            href="https://wa.me/"
-            target="_blank"
-            class="btn btn-social-media"
-            ><i class="bi bi-whatsapp"></i
-          ></a>
-          <button
-            id="toggle-dark"
-            class="btn btn-outline-secondary ms-3"
-            title="Toggle dark mode"
-          >
-            <i class="bi bi-moon"></i>
-          </button>
+          <div class="d-flex mt-3 ms-3 mt-md-0 ms-md-0">
+            <a
+              href="https://www.instagram.com/papoyice/"
+              target="_blank"
+              class="btn btn-social-media me-3"
+              ><i class="bi bi-instagram"></i
+            ></a>
+            <a
+              href="https://wa.me/6281377783334"
+              target="_blank"
+              class="btn btn-social-media"
+              ><i class="bi bi-whatsapp"></i
+            ></a>
+            <button
+              id="toggle-dark"
+              class="btn btn-outline-secondary ms-3"
+              title="Toggle dark mode"
+            >
+              <i class="bi bi-moon"></i>
+            </button>
+          </div>
         </div>
       </div>
     </nav>
 
     <main class="flex-shrink-0">
-      <!-- Heroes -->
       <div class="container col-xxl-8 px-4 py-5" id="home">
         <div class="row flex-lg-row-reverse align-items-center g-5">
           <div class="col-lg-5">
             <img
               id="heroes-img"
               src="assets/img/Img.jpg"
-              class="d-block mx-lg-auto img-fluid rounded-4 shadow"
+              class="d-block mx-lg-auto img-fluid rounded-4 shadow slide-in"
               alt="Papoy Ice Blend"
               loading="lazy"
             />
@@ -117,6 +145,7 @@
             </p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
               <a
+                href="https://wa.me/6281377783334?text=Halo%20Papoy%20Ice,%20saya%20mau%20order%20ice%20blend!"
                 class="btn btn-primary rounded-pill px-4 py-2"
               >
                 <i class="bi bi-whatsapp me-2"></i> Pesan Sekarang
@@ -126,8 +155,6 @@
         </div>
       </div>
 
-
-      <!-- Services -->
       <div id="services" class="container text-center py-5">
         <div class="row">
           <div class="col-lg-8 mx-auto">
@@ -188,7 +215,6 @@
         </div>
       </div>
 
-      <!-- About -->
       <div id="about" class="container text-center py-5">
         <div class="row">
           <div class="col-lg-8 mx-auto">
@@ -244,7 +270,6 @@
         </div>
       </div>
 
-      <!-- Portfolio / Produk -->
       <div id="portfolio" class="container text-center py-5">
         <div class="row">
           <div class="col-lg-8 mx-auto">
@@ -305,11 +330,9 @@
               </div>
             </div>
           </div>
-          <!-- Tambahkan produk lain dengan pola serupa -->
         </div>
       </div>
 
-      <!-- Contact -->
       <div id="contact" class="container text-center pt-4 pb-5">
         <div class="row">
           <div class="col-lg-8 mx-auto">
@@ -384,7 +407,6 @@
       </div>
     </main>
 
-    <!-- Footer -->
     <footer class="footer mt-auto py-4 bg-white">
       <div class="container">
         <div
@@ -408,7 +430,6 @@
       </div>
     </footer>
 
-    <!-- Popper and Bootstrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
       crossorigin="anonymous"
@@ -419,26 +440,40 @@
     ></script>
     <script src="assets/js/custom.js"></script>
     <script>
-  document.getElementById("toggle-dark").addEventListener("click", function () {
-    document.body.classList.toggle("dark-mode");
-    // Ganti icon
-    const icon = this.querySelector("i");
-    // Ganti gambar heroes
-    const heroesImg = document.getElementById('heroes-img');
-    if (document.body.classList.contains("dark-mode")) {
-      icon.classList.remove("bi-moon");
-      icon.classList.add("bi-brightness-high");
-      if (heroesImg) heroesImg.src = "assets/img/ImgD.png";
-    } else {
-      icon.classList.remove("bi-brightness-high");
-      icon.classList.add("bi-moon");
-      if (heroesImg) heroesImg.src = "assets/img/Img.jpg";
-    }
-  });
-</script>
+      function animateHeroesImg() {
+        const img = document.getElementById("heroes-img");
+        if (!img) return;
+        img.classList.remove("show");
+        void img.offsetWidth;
+        img.classList.add("show");
+      }
+      window.addEventListener("DOMContentLoaded", animateHeroesImg);
+
+      document
+        .getElementById("toggle-dark")
+        .addEventListener("click", function () {
+          document.body.classList.toggle("dark-mode");
+          const icon = this.querySelector("i");
+          const heroesImg = document.getElementById("heroes-img");
+          if (document.body.classList.contains("dark-mode")) {
+            icon.classList.remove("bi-moon");
+            icon.classList.add("bi-brightness-high");
+            if (heroesImg) {
+              heroesImg.src = "assets/img/ImgD.png";
+              heroesImg.onload = animateHeroesImg;
+            }
+          } else {
+            icon.classList.remove("bi-brightness-high");
+            icon.classList.add("bi-moon");
+            if (heroesImg) {
+              heroesImg.src = "assets/img/Img.jpg";
+              heroesImg.onload = animateHeroesImg;
+            }
+          }
+        });
+    </script>
     <script>
-      // Smooth scroll for anchor links
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
         anchor.addEventListener("click", function (e) {
           e.preventDefault();
           document.querySelector(this.getAttribute("href")).scrollIntoView({
@@ -447,6 +482,5 @@
         });
       });
     </script>
-    
   </body>
 </html>
