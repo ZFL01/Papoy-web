@@ -3,45 +3,124 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Papoy Ice - Minuman Ice Blend Segar dan Kekinian" />
+    <meta
+      name="description"
+      content="Papoy Ice - Minuman Ice Blend Segar dan Kekinian"
+    />
     <title>Papoy Ice</title>
     <link rel="shortcut icon" href="assets/img/Papoy.ico" type="image/x-icon" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="assets/css/style.css" />
     <style>
-      .navbar { transition: box-shadow 0.2s; }
-      .navbar.fixed-top { box-shadow: 0 2px 12px rgba(0,0,0,0.08); z-index: 1030; }
-      body { padding-top: 100px; }
-      @media (max-width: 991.98px) { body { padding-top: 120px; } }
-      .slide-in { opacity: 0; transform: translateX(60px); transition: opacity 0.7s cubic-bezier(.4,0,.2,1), transform 0.7s cubic-bezier(.4,0,.2,1);}
-      .slide-in.show { opacity: 1; transform: translateX(0);}
+      .navbar {
+        transition: box-shadow 0.2s;
+      }
+      .navbar.fixed-top {
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+        z-index: 1030;
+      }
+      body {
+        padding-top: 100px;
+      }
+      @media (max-width: 991.98px) {
+        body {
+          padding-top: 120px;
+        }
+      }
+      .slide-in {
+        opacity: 0;
+        transform: translateX(60px);
+        transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+          transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .slide-in.show {
+        opacity: 1;
+        transform: translateX(0);
+      }
     </style>
   </head>
   <body id="home" class="d-flex flex-column h-100">
-    <nav class="navbar navbar-expand-lg navbar-light py-4 bg-nav fixed-top shadow-sm">
+    <nav
+      class="navbar navbar-expand-lg navbar-light py-4 bg-nav fixed-top shadow-sm"
+    >
       <div class="container">
         <a class="navbar-brand" href="#home">
-          <img src="assets/img/Papoy.svg" alt="Papoy Ice" width="42" height="42" class="d-inline-block mt--2 me-2" />
+          <img
+            src="assets/img/Papoy.svg"
+            alt="Papoy Ice"
+            width="42"
+            height="42"
+            class="d-inline-block mt--2 me-2"
+          />
           <span class="text-body fs-4 fw-bolder">Papoy Ice</span>
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse py-3 py-lg-1" id="navbarSupportedContent">
+        <div
+          class="collapse navbar-collapse py-3 py-lg-1"
+          id="navbarSupportedContent"
+        >
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link mx-3" href="#home">Home</a></li>
-            <li class="nav-item"><a class="nav-link mx-3" href="#services">Layanan</a></li>
-            <li class="nav-item"><a class="nav-link mx-3" href="#about">Tentang</a></li>
-            <li class="nav-item"><a class="nav-link mx-3" href="#portfolio">Produk</a></li>
-            <li class="nav-item"><a class="nav-link mx-3" href="#contact">Kontak</a></li>
+            <li class="nav-item">
+              <a class="nav-link mx-3" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-3" href="#services">Layanan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-3" href="#about">Tentang</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-3" href="#portfolio">Produk</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-3" href="#contact">Kontak</a>
+            </li>
           </ul>
           <div class="d-flex mt-3 ms-3 mt-md-0 ms-md-0">
-            <a href="https://www.instagram.com/papoy.ice.drink?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="btn btn-social-media me-3"><i class="bi bi-instagram"></i></a>
-            <a href="https://wa.me/6281377783334" target="_blank" class="btn btn-social-media me-3"><i class="bi bi-whatsapp"></i></a>
-            <a href="https://www.tiktok.com/@papoy.ice.drink" target="_blank" class="btn btn-social-media me-3"><i class="bi bi-tiktok"></i></a>
-            <button id="toggle-dark" class="btn btn-outline-secondary ms-3" title="Toggle dark mode"><i class="bi bi-moon"></i></button>
+            <a
+              href="https://www.instagram.com/papoy.ice.drink?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              target="_blank"
+              class="btn btn-social-media me-3"
+              ><i class="bi bi-instagram"></i
+            ></a>
+            <a
+              href="https://wa.me/6281377783334"
+              target="_blank"
+              class="btn btn-social-media me-3"
+              ><i class="bi bi-whatsapp"></i
+            ></a>
+            <a
+              href="https://www.tiktok.com/@papoy.ice.drink"
+              target="_blank"
+              class="btn btn-social-media me-3"
+              ><i class="bi bi-tiktok"></i
+            ></a>
+            <button
+              id="toggle-dark"
+              class="btn btn-outline-secondary ms-3"
+              title="Toggle dark mode"
+            >
+              <i class="bi bi-moon"></i>
+            </button>
           </div>
         </div>
       </div>
@@ -51,18 +130,30 @@
       <div class="container col-xxl-8 px-4 py-5" id="home">
         <div class="row flex-lg-row-reverse align-items-center g-5">
           <div class="col-lg-5">
-            <img id="heroes-img" src="assets/img/Img.jpg" class="d-block mx-lg-auto img-fluid rounded-4 shadow slide-in" alt="Papoy Ice Blend" loading="lazy" />
+            <img
+              id="heroes-img"
+              src="assets/img/Img.jpg"
+              class="d-block mx-lg-auto img-fluid rounded-4 shadow slide-in"
+              alt="Papoy Ice Blend"
+              loading="lazy"
+            />
           </div>
           <div class="col-lg-7">
             <h1 class="fw-bold lh-2 mb-4">
               <i class="bi bi-cup-straw text-primary me-2"></i>
-              Segarnya Ice Blend Kekinian, Hanya di <span class="text-primary">Papoy Ice</span>
+              Segarnya Ice Blend Kekinian, Hanya di
+              <span class="text-primary">Papoy Ice</span>
             </h1>
             <p class="lead mb-5">
-              Nikmati berbagai varian rasa ice blend segar, enak, dan kekinian. Cocok untuk semua suasana, dari nongkrong bareng teman hingga acara keluarga. Papoy Ice, pilihan tepat pelepas dahaga!
+              Nikmati berbagai varian rasa ice blend segar, enak, dan kekinian.
+              Cocok untuk semua suasana, dari nongkrong bareng teman hingga
+              acara keluarga. Papoy Ice, pilihan tepat pelepas dahaga!
             </p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-              <a href="https://wa.me/6281377783334?text=Halo%20Papoy%20Ice,%20saya%20mau%20order%20ice%20blend!" class="btn btn-primary rounded-pill px-4 py-2">
+              <a
+                href="https://wa.me/6281377783334?text=Halo%20Papoy%20Ice,%20saya%20mau%20order%20ice%20blend!"
+                class="btn btn-primary rounded-pill px-4 py-2"
+              >
                 <i class="bi bi-whatsapp me-2"></i> Pesan Sekarang
               </a>
             </div>
@@ -77,7 +168,9 @@
               <i class="bi bi-stars text-warning me-2"></i>LAYANAN KAMI
             </h3>
             <p class="lead">
-              Papoy Ice menyediakan layanan terbaik untuk Anda, mulai dari penjualan cup, paket franchise, hingga pemesanan untuk event dan acara.
+              Papoy Ice menyediakan layanan terbaik untuk Anda, mulai dari
+              penjualan cup, paket franchise, hingga pemesanan untuk event dan
+              acara.
             </p>
           </div>
         </div>
@@ -90,7 +183,8 @@
                 </div>
                 <h3 class="mb-2">Penjualan Cup</h3>
                 <p>
-                  Tersedia berbagai varian rasa ice blend dalam kemasan cup siap minum, cocok untuk dinikmati kapan saja.
+                  Tersedia berbagai varian rasa ice blend dalam kemasan cup siap
+                  minum, cocok untuk dinikmati kapan saja.
                 </p>
               </div>
             </div>
@@ -103,7 +197,8 @@
                 </div>
                 <h3 class="mb-2">Paket Franchise</h3>
                 <p>
-                  Ingin punya usaha sendiri? Gabung menjadi mitra Papoy Ice dan dapatkan paket franchise menarik!
+                  Ingin punya usaha sendiri? Gabung menjadi mitra Papoy Ice dan
+                  dapatkan paket franchise menarik!
                 </p>
               </div>
             </div>
@@ -116,7 +211,9 @@
                 </div>
                 <h3 class="mb-2">Pemesanan Event</h3>
                 <p>
-                  Sediakan Papoy Ice untuk acara ulang tahun, gathering, seminar, dan event lainnya. Harga spesial untuk pemesanan banyak!
+                  Sediakan Papoy Ice untuk acara ulang tahun, gathering,
+                  seminar, dan event lainnya. Harga spesial untuk pemesanan
+                  banyak!
                 </p>
               </div>
             </div>
@@ -131,16 +228,20 @@
               <i class="bi bi-info-circle text-info me-2"></i>TENTANG PAPOY ICE
             </h3>
             <p class="lead">
-              Papoy Ice berdiri sejak 2022 sebagai pelopor minuman ice blend segar dan kekinian di Indonesia. Kami berkomitmen menghadirkan minuman berkualitas dengan harga terjangkau.
+              Papoy Ice berdiri sejak 2022 sebagai pelopor minuman ice blend
+              segar dan kekinian di Indonesia. Kami berkomitmen menghadirkan
+              minuman berkualitas dengan harga terjangkau.
             </p>
           </div>
         </div>
         <div class="row align-items-center text-start g-5 py-4">
           <div class="col-lg-5 position-relative">
-            <div class="bg-about position-absolute top-0 start-0 w-100 h-100 rounded-4"></div>
+            <div
+              class="bg-about position-absolute top-0 start-0 w-100 h-100 rounded-4"
+            ></div>
             <img
               src="assets/img/PapoyImg.jpg"
-              class="d-block mx-lg-auto img-fluid position-relative slide-in"
+              class="d-block mx-lg-auto img-fluid position-relative slide-in-left"
               alt="Tentang Papoy Ice"
               loading="lazy"
               style="z-index: 1"
@@ -149,14 +250,31 @@
           <div class="col-lg-7">
             <h4 class="fw-bold lh-2 mb-3">Kenapa Memilih Papoy Ice?</h4>
             <ul>
-              <li><i class="bi bi-check-circle-fill text-success me-2"></i>Bahan berkualitas dan higienis</li>
-              <li><i class="bi bi-check-circle-fill text-success me-2"></i>Varian rasa lengkap dan kekinian</li>
-              <li><i class="bi bi-check-circle-fill text-success me-2"></i>Harga terjangkau untuk semua kalangan</li>
-              <li><i class="bi bi-check-circle-fill text-success me-2"></i>Bisa pesan untuk event dan franchise</li>
-              <li><i class="bi bi-check-circle-fill text-success me-2"></i>Pelayanan ramah dan cepat</li>
+              <li>
+                <i class="bi bi-check-circle-fill text-success me-2"></i>Bahan
+                berkualitas dan higienis
+              </li>
+              <li>
+                <i class="bi bi-check-circle-fill text-success me-2"></i>Varian
+                rasa lengkap dan kekinian
+              </li>
+              <li>
+                <i class="bi bi-check-circle-fill text-success me-2"></i>Harga
+                terjangkau untuk semua kalangan
+              </li>
+              <li>
+                <i class="bi bi-check-circle-fill text-success me-2"></i>Bisa
+                pesan untuk event dan franchise
+              </li>
+              <li>
+                <i class="bi bi-check-circle-fill text-success me-2"></i
+                >Pelayanan ramah dan cepat
+              </li>
             </ul>
             <p>
-              Kami selalu berinovasi menghadirkan rasa baru dan promo menarik setiap bulannya. Jadikan hari-harimu lebih segar bersama Papoy Ice!
+              Kami selalu berinovasi menghadirkan rasa baru dan promo menarik
+              setiap bulannya. Jadikan hari-harimu lebih segar bersama Papoy
+              Ice!
             </p>
           </div>
         </div>
@@ -169,56 +287,116 @@
               <i class="bi bi-collection text-danger me-2"></i>VARIAN PRODUK
             </h3>
             <p class="lead">
-              Pilih varian rasa favoritmu! Semua produk Papoy Ice dibuat dari bahan pilihan dan disajikan segar setiap hari.
+              Pilih varian rasa favoritmu! Semua produk Papoy Ice dibuat dari
+              bahan pilihan dan disajikan segar setiap hari.
             </p>
           </div>
         </div>
         <div class="row text-start py-4">
+          <!-- 1 -->
           <div class="col-lg-4 mb-4">
             <div class="card h-100 border-0 rounded-4 shadow-sm">
-              <div class="card-body p-4 pb-0 text-center">
-                <img src="assets/img/chocolate-1.png" alt="Chocolate Blend" class="card-img-top img-fluid rounded-4 mb-3" style="max-width: 120px" />
-                <p class="fw-semibold"><i class="bi bi-cup-hot text-primary me-2"></i>Chocolate Ice Blend</p>
+              <div
+                class="card-body d-flex flex-column align-items-center justify-content-between h-100 p-4 pb-0 text-center"
+              >
+                <img
+                  src="assets/img/chocolate-1.png"
+                  alt="Chocolate Blend"
+                  class="card-img-top img-fluid rounded-4 mb-3"
+                />
+                <p class="fw-semibold mt-auto mb-3">
+                  <i class="bi bi-cup-hot text-primary me-2"></i>Chocolate Ice
+                  Blend
+                </p>
               </div>
             </div>
           </div>
+          <!-- 2 -->
           <div class="col-lg-4 mb-4">
             <div class="card h-100 border-0 rounded-4 shadow-sm">
-              <div class="card-body p-4 pb-0 text-center">
-                <img src="assets/img/Taro.png" alt="Taro Ice Blend" class="card-img-top img-fluid rounded-4 mb-3" style="max-width: 120px" />
-                <p class="fw-semibold"><i class="bi bi-cup-hot text-purple me-2"></i>Taro Ice Blend</p>
+              <div
+                class="card-body d-flex flex-column align-items-center justify-content-between h-100 p-4 pb-0 text-center"
+              >
+                <img
+                  src="assets/img/Taro.png"
+                  alt="Taro Ice Blend"
+                  class="card-img-top img-fluid rounded-4 mb-3"
+                />
+                <p class="fw-semibold mt-auto mb-3">
+                  <i class="bi bi-cup-hot text-purple me-2"></i>Taro Ice Blend
+                </p>
               </div>
             </div>
           </div>
+          <!-- 3 -->
           <div class="col-lg-4 mb-4">
             <div class="card h-100 border-0 rounded-4 shadow-sm">
-              <div class="card-body p-4 pb-0 text-center">
-                <img src="assets/img/Strawberry.png" alt="Taro Blend" class="card-img-top img-fluid rounded-4 mb-3" style="max-width: 120px" />
-                <p class="fw-semibold"><i class="bi bi-cup-hot text-purple me-2"></i>Strawberry Ice Blend</p>
+              <div
+                class="card-body d-flex flex-column align-items-center justify-content-between h-100 p-4 pb-0 text-center"
+              >
+                <img
+                  src="assets/img/Strawberry.png"
+                  alt="Strawberry Ice Blend"
+                  class="card-img-top img-fluid rounded-4 mb-3"
+                />
+                <p class="fw-semibold mt-auto mb-3">
+                  <i class="bi bi-cup-hot text-danger me-2"></i>Strawberry Ice
+                  Blend
+                </p>
               </div>
             </div>
           </div>
+          <!-- 4 -->
           <div class="col-lg-4 mb-4">
             <div class="card h-100 border-0 rounded-4 shadow-sm">
-              <div class="card-body p-4 pb-0 text-center">
-                <img src="assets/img/Mangga.png" alt="Mangga Ice Blend" class="card-img-top img-fluid rounded-4 mb-3" style="max-width: 120px" />
-                <p class="fw-semibold"><i class="bi bi-cup-hot text-purple me-2"></i>Mangga Ice Blend</p>
+              <div
+                class="card-body d-flex flex-column align-items-center justify-content-between h-100 p-4 pb-0 text-center"
+              >
+                <img
+                  src="assets/img/Mangga.png"
+                  alt="Mangga Ice Blend"
+                  class="card-img-top img-fluid rounded-4 mb-3"
+                />
+                <p class="fw-semibold mt-auto mb-3">
+                  <i class="bi bi-cup-hot text-warning me-2"></i>Mangga Ice
+                  Blend
+                </p>
               </div>
             </div>
           </div>
+          <!-- 5 -->
           <div class="col-lg-4 mb-4">
             <div class="card h-100 border-0 rounded-4 shadow-sm">
-              <div class="card-body p-4 pb-0 text-center">
-                <img src="assets/img/Matcha.png" alt="Taro Blend" class="card-img-top img-fluid rounded-4 mb-3" style="max-width: 120px" />
-                <p class="fw-semibold"><i class="bi bi-cup-hot text-purple me-2"></i>Matcha Ice Blend</p>
+              <div
+                class="card-body d-flex flex-column align-items-center justify-content-between h-100 p-4 pb-0 text-center"
+              >
+                <img
+                  src="assets/img/Matcha.png"
+                  alt="Matcha Ice Blend"
+                  class="card-img-top img-fluid rounded-4 mb-3"
+                />
+                <p class="fw-semibold mt-auto mb-3">
+                  <i class="bi bi-cup-hot text-success me-2"></i>Matcha Ice
+                  Blend
+                </p>
               </div>
             </div>
           </div>
+          <!-- 6 -->
           <div class="col-lg-4 mb-4">
             <div class="card h-100 border-0 rounded-4 shadow-sm">
-              <div class="card-body p-4 pb-0 text-center">
-                <img src="assets/img/Vanilla.png" alt="Vanilla Ice Blend" class="card-img-top img-fluid rounded-4 mb-3" style="max-width: 120px" />
-                <p class="fw-semibold"><i class="bi bi-cup-hot text-success me-2"></i>Vanilla Ice Blend</p>
+              <div
+                class="card-body d-flex flex-column align-items-center justify-content-between h-100 p-4 pb-0 text-center"
+              >
+                <img
+                  src="assets/img/Vanilla.png"
+                  alt="Vanilla Ice Blend"
+                  class="card-img-top img-fluid rounded-4 mb-3"
+                />
+                <p class="fw-semibold mt-auto mb-3">
+                  <i class="bi bi-cup-hot text-success me-2"></i>Vanilla Ice
+                  Blend
+                </p>
               </div>
             </div>
           </div>
@@ -232,7 +410,8 @@
               <i class="bi bi-envelope-paper text-primary me-2"></i>KONTAK KAMI
             </h3>
             <p class="lead">
-              Hubungi kami untuk pemesanan, kerjasama, atau informasi lebih lanjut tentang Papoy Ice.
+              Hubungi kami untuk pemesanan, kerjasama, atau informasi lebih
+              lanjut tentang Papoy Ice.
             </p>
           </div>
         </div>
@@ -303,19 +482,35 @@
 
     <footer class="footer mt-auto py-4 bg-white">
       <div class="container">
-        <div class="d-flex flex-column flex-md-row align-items-center align-items-md-left text-body">
+        <div
+          class="d-flex flex-column flex-md-row align-items-center align-items-md-left text-body"
+        >
           <div class="copyright text-center mb-2 mb-md-0">
-            &copy; 2022 - <a href="https://www.instagram.com/papoyice/" target="_blank" class="fw-bolder">Papoy Ice</a>. All rights reserved.
+            &copy; 2022 -
+            <a
+              href="https://www.instagram.com/papoyice/"
+              target="_blank"
+              class="fw-bolder"
+              >Papoy Ice</a
+            >. All rights reserved.
           </div>
           <div class="link ms-md-auto">
-            <a href="https://www.instagram.com/papoyice/" target="_blank">Terms & Conditions</a>
+            <a href="https://www.instagram.com/papoyice/" target="_blank"
+              >Terms & Conditions</a
+            >
           </div>
         </div>
       </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="assets/js/custom.js"></script>
     <script>
       // Heroes animasi
@@ -363,23 +558,23 @@
 
       // Slide-in animasi untuk img di about saat scroll/klik menu Tentang
       function showSlideInOnScroll() {
-        document.querySelectorAll('.slide-in').forEach(el => {
+        document.querySelectorAll(".slide-in").forEach((el) => {
           const rect = el.getBoundingClientRect();
           if (rect.top < window.innerHeight - 60) {
-            el.classList.add('show');
+            el.classList.add("show");
           }
         });
       }
-      window.addEventListener('scroll', showSlideInOnScroll);
-      window.addEventListener('DOMContentLoaded', showSlideInOnScroll);
+      window.addEventListener("scroll", showSlideInOnScroll);
+      window.addEventListener("DOMContentLoaded", showSlideInOnScroll);
 
-      document.querySelectorAll('a[href="#about"]').forEach(link => {
-        link.addEventListener('click', function() {
-          const img = document.querySelector('#about .slide-in');
+      document.querySelectorAll('a[href="#about"]').forEach((link) => {
+        link.addEventListener("click", function () {
+          const img = document.querySelector("#about .slide-in");
           if (img) {
-            img.classList.remove('show');
+            img.classList.remove("show");
             void img.offsetWidth;
-            img.classList.add('show');
+            img.classList.add("show");
           }
         });
       });

@@ -49,3 +49,25 @@ document.querySelectorAll('a[href="#about"]').forEach((link) => {
     }
   });
 });
+function showSlideInOnScroll() {
+  document.querySelectorAll(".slide-in, .slide-in-left").forEach((el) => {
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 60) {
+      el.classList.add("show");
+    }
+  });
+}
+window.addEventListener("scroll", showSlideInOnScroll);
+window.addEventListener("DOMContentLoaded", showSlideInOnScroll);
+
+// Jika klik menu tentang, animasi ulang untuk .slide-in-left
+document.querySelectorAll('a[href="#about"]').forEach((link) => {
+  link.addEventListener("click", function () {
+    const img = document.querySelector("#about .slide-in-left");
+    if (img) {
+      img.classList.remove("show");
+      void img.offsetWidth;
+      img.classList.add("show");
+    }
+  });
+});
