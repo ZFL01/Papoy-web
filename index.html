@@ -293,116 +293,624 @@
           </div>
         </div>
         <div class="row text-start py-4">
-          <!-- 1 -->
-          <div class="col-lg-4 mb-4">
-            <div class="card h-100 border-0 rounded-4 shadow-sm">
-              <div
-                class="card-body d-flex flex-column align-items-center justify-content-between h-100 p-4 pb-0 text-center"
+  <!-- 1 -->
+  <div class="col-lg-4 mb-4">
+    <div class="card h-100 border-0 rounded-4 shadow-sm"
+         data-bs-toggle="modal" data-bs-target="#chocolateModal"
+         style="cursor: pointer;">
+      <div class="card-body d-flex flex-column align-items-center justify-content-between h-100 p-4 pb-0 text-center">
+        <img
+          src="assets/img/chocolate-1.png"
+          alt="Chocolate Blend"
+          class="card-img-top img-fluid rounded-4 mb-3"
+        />
+        <p class="fw-semibold mt-auto mb-3">
+          <i class="bi bi-cup-hot text-primary me-2"></i>Chocolate Ice Blend
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- 2 -->
+  <div class="col-lg-4 mb-4">
+    <div class="card h-100 border-0 rounded-4 shadow-sm"
+         data-bs-toggle="modal" data-bs-target="#taroModal"
+         style="cursor: pointer;">
+      <div class="card-body d-flex flex-column align-items-center justify-content-between h-100 p-4 pb-0 text-center">
+        <img
+          src="assets/img/Taro.png"
+          alt="Taro Ice Blend"
+          class="card-img-top img-fluid rounded-4 mb-3"
+        />
+        <p class="fw-semibold mt-auto mb-3">
+          <i class="bi bi-cup-hot text-purple me-2"></i>Taro Ice Blend
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- 3 -->
+  <div class="col-lg-4 mb-4">
+    <div class="card h-100 border-0 rounded-4 shadow-sm"
+         data-bs-toggle="modal" data-bs-target="#strawberryModal"
+         style="cursor: pointer;">
+      <div class="card-body d-flex flex-column align-items-center justify-content-between h-100 p-4 pb-0 text-center">
+        <img
+          src="assets/img/Strawberry.png"
+          alt="Strawberry Ice Blend"
+          class="card-img-top img-fluid rounded-4 mb-3"
+        />
+        <p class="fw-semibold mt-auto mb-3">
+          <i class="bi bi-cup-hot text-danger me-2"></i>Strawberry Ice Blend
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- 4 -->
+  <div class="col-lg-4 mb-4">
+    <div class="card h-100 border-0 rounded-4 shadow-sm"
+         data-bs-toggle="modal" data-bs-target="#manggaModal"
+         style="cursor: pointer;">
+      <div class="card-body d-flex flex-column align-items-center justify-content-between h-100 p-4 pb-0 text-center">
+        <img
+          src="assets/img/Mangga.png"
+          alt="Mangga Ice Blend"
+          class="card-img-top img-fluid rounded-4 mb-3"
+        />
+        <p class="fw-semibold mt-auto mb-3">
+          <i class="bi bi-cup-hot text-warning me-2"></i>Mangga Ice Blend
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- 5 -->
+  <div class="col-lg-4 mb-4">
+    <div class="card h-100 border-0 rounded-4 shadow-sm"
+         data-bs-toggle="modal" data-bs-target="#matchaModal"
+         style="cursor: pointer;">
+      <div class="card-body d-flex flex-column align-items-center justify-content-between h-100 p-4 pb-0 text-center">
+        <img
+          src="assets/img/Matcha.png"
+          alt="Matcha Ice Blend"
+          class="card-img-top img-fluid rounded-4 mb-3"
+        />
+        <p class="fw-semibold mt-auto mb-3">
+          <i class="bi bi-cup-hot text-success me-2"></i>Matcha Ice Blend
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- 6 -->
+  <div class="col-lg-4 mb-4">
+    <div class="card h-100 border-0 rounded-4 shadow-sm"
+         data-bs-toggle="modal" data-bs-target="#vanillaModal"
+         style="cursor: pointer;">
+      <div class="card-body d-flex flex-column align-items-center justify-content-between h-100 p-4 pb-0 text-center">
+        <img
+          src="assets/img/Vanilla.png"
+          alt="Vanilla Ice Blend"
+          class="card-img-top img-fluid rounded-4 mb-3"
+        />
+        <p class="fw-semibold mt-auto mb-3">
+          <i class="bi bi-cup-hot text-success me-2"></i>Vanilla Ice Blend
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+      <!-- Modal Taro Ice Blend -->
+      <div
+        class="modal fade"
+        id="taroModal"
+        tabindex="-1"
+        aria-labelledby="taroModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content rounded-4">
+            <div class="modal-header border-0 pb-0">
+              <h5
+                class="modal-title fw-bold"
+                id="taroModalLabel"
+                style="
+                  font-family: 'Raleway', sans-serif;
+                  font-size: 2rem;
+                  letter-spacing: 0.5px;
+                  color: #222;
+                "
               >
-                <img
-                  src="assets/img/chocolate-1.png"
-                  alt="Chocolate Blend"
-                  class="card-img-top img-fluid rounded-4 mb-3"
-                />
-                <p class="fw-semibold mt-auto mb-3">
-                  <i class="bi bi-cup-hot text-primary me-2"></i>Chocolate Ice
-                  Blend
-                </p>
-              </div>
+                <i class="bi bi-cup-hot text-purple me-2"></i>Taro Ice Blend
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body text-center">
+              <img
+                src="assets/img/Taro.png"
+                alt="Taro Ice Blend"
+                class="img-fluid rounded-4 mb-3 shadow"
+                style="max-width: 220px"
+              />
+              <p
+                class="mt-3 mb-0"
+                style="
+                  font-family: 'Raleway', sans-serif;
+                  font-size: 1.15rem;
+                  color: #444;
+                "
+              >
+                Minuman ice blend rasa taro yang creamy dan segar, cocok untuk
+                segala suasana!
+              </p>
+            </div>
+            <div class="modal-footer border-0 pt-0">
             </div>
           </div>
-          <!-- 2 -->
-          <div class="col-lg-4 mb-4">
-            <div class="card h-100 border-0 rounded-4 shadow-sm">
-              <div
-                class="card-body d-flex flex-column align-items-center justify-content-between h-100 p-4 pb-0 text-center"
+        </div>
+      </div>
+      <!-- Modal Chocolate Ice Blend -->
+      <div
+        class="modal fade"
+        id="chocolateModal"
+        tabindex="-1"
+        aria-labelledby="chocolateModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content rounded-4">
+            <div class="modal-header border-0 pb-0">
+              <h5 class="modal-title fw-bold" id="chocolateModalLabel"style="
+                  font-family: 'Raleway', sans-serif;
+                  font-size: 2rem;
+                  letter-spacing: 0.5px;
+                  color: #222;
+                ">
+                <i class="bi bi-cup-hot text-primary me-2"></i>Chocolate Ice
+                Blend
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body text-center">
+              <img
+                src="assets/img/chocolate-1.png"
+                alt="Chocolate Ice Blend"
+                class="img-fluid rounded-4 mb-3 shadow"
+                style="max-width: 220px"
+              />
+              <p
+                class="mt-3 mb-0"
+                style="
+                  font-family: 'Raleway', sans-serif;
+                  font-size: 1.15rem;
+                  color: #444;
+                "
               >
-                <img
-                  src="assets/img/Taro.png"
-                  alt="Taro Ice Blend"
-                  class="card-img-top img-fluid rounded-4 mb-3"
-                />
-                <p class="fw-semibold mt-auto mb-3">
-                  <i class="bi bi-cup-hot text-purple me-2"></i>Taro Ice Blend
-                </p>
-              </div>
+                Ice blend rasa coklat premium, manis dan nikmat untuk semua
+                suasana!
+              </p>
+            </div>
+            <div class="modal-footer border-0 pt-0">
+              
             </div>
           </div>
-          <!-- 3 -->
-          <div class="col-lg-4 mb-4">
-            <div class="card h-100 border-0 rounded-4 shadow-sm">
-              <div
-                class="card-body d-flex flex-column align-items-center justify-content-between h-100 p-4 pb-0 text-center"
+        </div>
+      </div>
+      <!-- Modal Vanilla Ice Blend -->
+      <div
+        class="modal fade"
+        id="vanillaModal"
+        tabindex="-1"
+        aria-labelledby="vanillaModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content rounded-4">
+            <div class="modal-header border-0 pb-0">
+              <h5 class="modal-title fw-bold" id="vanillaModalLabel" style="
+                  font-family: 'Raleway', sans-serif;
+                  font-size: 2rem;
+                  letter-spacing: 0.5px;
+                  color: #222;
+                ">
+                <i class="bi bi-cup-hot text-success me-2"></i>Vanilla Ice Blend
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body text-center">
+              <img
+                src="assets/img/Vanilla.png"
+                alt="Vanilla Ice Blend"
+                class="img-fluid rounded-4 mb-3 shadow"
+                style="max-width: 220px"
+              />
+              <p
+                class="mt-3 mb-0"
+                style="
+                  font-family: 'Raleway', sans-serif;
+                  font-size: 1.15rem;
+                  color: #444;
+                "
               >
-                <img
-                  src="assets/img/Strawberry.png"
-                  alt="Strawberry Ice Blend"
-                  class="card-img-top img-fluid rounded-4 mb-3"
-                />
-                <p class="fw-semibold mt-auto mb-3">
-                  <i class="bi bi-cup-hot text-danger me-2"></i>Strawberry Ice
-                  Blend
-                </p>
-              </div>
+                Kelembutan rasa vanilla yang creamy, cocok untuk segala suasana.
+              </p>
+            </div>
+            <div class="modal-footer border-0 pt-0">
             </div>
           </div>
-          <!-- 4 -->
-          <div class="col-lg-4 mb-4">
-            <div class="card h-100 border-0 rounded-4 shadow-sm">
-              <div
-                class="card-body d-flex flex-column align-items-center justify-content-between h-100 p-4 pb-0 text-center"
+        </div>
+      </div>
+      <!-- Modal Strawberry Ice Blend -->
+      <div
+        class="modal fade"
+        id="strawberryModal"
+        tabindex="-1"
+        aria-labelledby="strawberryModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content rounded-4">
+            <div class="modal-header border-0 pb-0">
+              <h5 class="modal-title fw-bold" id="strawberryModalLabel" style="
+                  font-family: 'Raleway', sans-serif;
+                  font-size: 2rem;
+                  letter-spacing: 0.5px;
+                  color: #222;
+                ">
+                <i class="bi bi-cup-hot text-danger me-2"></i>Strawberry Ice
+                Blend
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body text-center">
+              <img
+                src="assets/img/Strawberry.png"
+                alt="Strawberry Ice Blend"
+                class="img-fluid rounded-4 mb-3 shadow"
+                style="max-width: 220px"
+              />
+              <p
+                class="mt-3 mb-0"
+                style="
+                  font-family: 'Raleway', sans-serif;
+                  font-size: 1.15rem;
+                  color: #444;
+                "
               >
-                <img
-                  src="assets/img/Mangga.png"
-                  alt="Mangga Ice Blend"
-                  class="card-img-top img-fluid rounded-4 mb-3"
-                />
-                <p class="fw-semibold mt-auto mb-3">
-                  <i class="bi bi-cup-hot text-warning me-2"></i>Mangga Ice
-                  Blend
-                </p>
-              </div>
+                Kesegaran buah stroberi asli dalam setiap tegukan ice blend ini!
+              </p>
+            </div>
+            <div class="modal-footer border-0 pt-0">
+              
             </div>
           </div>
-          <!-- 5 -->
-          <div class="col-lg-4 mb-4">
-            <div class="card h-100 border-0 rounded-4 shadow-sm">
-              <div
-                class="card-body d-flex flex-column align-items-center justify-content-between h-100 p-4 pb-0 text-center"
+        </div>
+      </div>
+      <!-- Modal Mangga Ice Blend -->
+      <div
+        class="modal fade"
+        id="manggaModal"
+        tabindex="-1"
+        aria-labelledby="manggaModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content rounded-4">
+            <div class="modal-header border-0 pb-0">
+              <h5 class="modal-title fw-bold" id="manggaModalLabel" style="
+                  font-family: 'Raleway', sans-serif;
+                  font-size: 2rem;
+                  letter-spacing: 0.5px;
+                  color: #222;
+                ">
+                <i class="bi bi-cup-hot text-warning me-2"></i>Mangga Ice Blend
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body text-center">
+              <img
+                src="assets/img/Mangga.png"
+                alt="Mangga Ice Blend"
+                class="img-fluid rounded-4 mb-3 shadow"
+                style="max-width: 220px"
+              />
+              <p
+                class="mt-3 mb-0"
+                style="
+                  font-family: 'Raleway', sans-serif;
+                  font-size: 1.15rem;
+                  color: #444;
+                "
               >
-                <img
-                  src="assets/img/Matcha.png"
-                  alt="Matcha Ice Blend"
-                  class="card-img-top img-fluid rounded-4 mb-3"
-                />
-                <p class="fw-semibold mt-auto mb-3">
-                  <i class="bi bi-cup-hot text-success me-2"></i>Matcha Ice
-                  Blend
-                </p>
-              </div>
+                Rasakan segarnya mangga pilihan dalam ice blend yang
+                menyegarkan!
+              </p>
+            </div>
+            <div class="modal-footer border-0 pt-0">
             </div>
           </div>
-          <!-- 6 -->
-          <div class="col-lg-4 mb-4">
-            <div class="card h-100 border-0 rounded-4 shadow-sm">
-              <div
-                class="card-body d-flex flex-column align-items-center justify-content-between h-100 p-4 pb-0 text-center"
+        </div>
+      </div>
+      <!-- Modal Matcha Ice Blend -->
+      <div
+        class="modal fade"
+        id="matchaModal"
+        tabindex="-1"
+        aria-labelledby="matchaModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content rounded-4">
+            <div class="modal-header border-0 pb-0">
+              <h5 class="modal-title fw-bold" id="matchaModalLabel" style="
+                  font-family: 'Raleway', sans-serif;
+                  font-size: 2rem;
+                  letter-spacing: 0.5px;
+                  color: #222;
+                ">
+                <i class="bi bi-cup-hot text-success me-2"></i>Matcha Ice Blend
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body text-center">
+              <img
+                src="assets/img/Matcha.png"
+                alt="Matcha Ice Blend"
+                class="img-fluid rounded-4 mb-3 shadow"
+                style="max-width: 220px"
+              />
+              <p
+                class="mt-3 mb-0"
+                style="
+                  font-family: 'Raleway', sans-serif;
+                  font-size: 1.15rem;
+                  color: #444;
+                "
               >
-                <img
-                  src="assets/img/Vanilla.png"
-                  alt="Vanilla Ice Blend"
-                  class="card-img-top img-fluid rounded-4 mb-3"
-                />
-                <p class="fw-semibold mt-auto mb-3">
-                  <i class="bi bi-cup-hot text-success me-2"></i>Vanilla Ice
-                  Blend
-                </p>
-              </div>
+                Ice blend matcha dengan aroma teh hijau yang khas dan
+                menenangkan.
+              </p>
+            </div>
+            <div class="modal-footer border-0 pt-0">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal Chocolate Ice Blend -->
+      <div
+        class="modal fade"
+        id="chocolateModal"
+        tabindex="-1"
+        aria-labelledby="chocolateModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content rounded-4">
+            <div class="modal-header border-0 pb-0">
+              <h5 class="modal-title fw-bold" id="chocolateModalLabel" style="
+                  font-family: 'Raleway', sans-serif;
+                  font-size: 2rem;
+                  letter-spacing: 0.5px;
+                  color: #222;
+                ">
+                <i class="bi bi-cup-hot text-primary me-2"></i>Chocolate Ice
+                Blend
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body text-center">
+              <img
+                src="assets/img/chocolate-1.png"
+                alt="Chocolate Ice Blend"
+                class="img-fluid rounded-4 mb-3 shadow"
+                style="max-width: 220px"
+              />
+              <p
+                class="mt-3 mb-0"
+                style="
+                  font-family: 'Raleway', sans-serif;
+                  font-size: 1.15rem;
+                  color: #444;
+                "
+              >
+                Ice blend rasa coklat premium, manis dan nikmat untuk semua
+                suasana!
+              </p>
+            </div>
+            <div class="modal-footer border-0 pt-0">
+              
             </div>
           </div>
         </div>
       </div>
 
+      <!-- Modal Strawberry Ice Blend -->
+      <div
+        class="modal fade"
+        id="strawberryModal"
+        tabindex="-1"
+        aria-labelledby="strawberryModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content rounded-4">
+            <div class="modal-header border-0 pb-0">
+              <h5 class="modal-title fw-bold" id="strawberryModalLabel" style="
+                  font-family: 'Raleway', sans-serif;
+                  font-size: 2rem;
+                  letter-spacing: 0.5px;
+                  color: #222;
+                ">
+                <i class="bi bi-cup-hot text-danger me-2"></i>Strawberry Ice
+                Blend
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body text-center">
+              <img
+                src="assets/img/Strawberry.png"
+                alt="Strawberry Ice Blend"
+                class="img-fluid rounded-4 mb-3 shadow"
+                style="max-width: 220px"
+              />
+              <p
+                class="mt-3 mb-0"
+                style="
+                  font-family: 'Raleway', sans-serif;
+                  font-size: 1.15rem;
+                  color: #444;
+                "
+              >
+                Kesegaran buah stroberi asli dalam setiap tegukan ice blend ini!
+              </p>
+            </div>
+            <div class="modal-footer border-0 pt-0">
+             
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Mangga Ice Blend -->
+      <div
+        class="modal fade"
+        id="manggaModal"
+        tabindex="-1"
+        aria-labelledby="manggaModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content rounded-4">
+            <div class="modal-header border-0 pb-0">
+              <h5 class="modal-title fw-bold" id="manggaModalLabel" style="
+                  font-family: 'Raleway', sans-serif;
+                  font-size: 2rem;
+                  letter-spacing: 0.5px;
+                  color: #222;
+                ">
+                <i class="bi bi-cup-hot text-warning me-2"></i>Mangga Ice Blend
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body text-center">
+              <img
+                src="assets/img/Mangga.png"
+                alt="Mangga Ice Blend"
+                class="img-fluid rounded-4 mb-3 shadow"
+                style="max-width: 220px"
+              />
+              <p
+                class="mt-3 mb-0"
+                style="
+                  font-family: 'Raleway', sans-serif;
+                  font-size: 1.15rem;
+                  color: #444;
+                "
+              >
+                Rasakan segarnya mangga pilihan dalam ice blend yang
+                menyegarkan!
+              </p>
+            </div>
+            <div class="modal-footer border-0 pt-0">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Matcha Ice Blend -->
+      <div
+        class="modal fade"
+        id="matchaModal"
+        tabindex="-1"
+        aria-labelledby="matchaModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content rounded-4">
+            <div class="modal-header border-0 pb-0">
+              <h5 class="modal-title fw-bold" id="matchaModalLabel" style="
+                  font-family: 'Raleway', sans-serif;
+                  font-size: 2rem;
+                  letter-spacing: 0.5px;
+                  color: #222;
+                ">
+                <i class="bi bi-cup-hot text-success me-2"></i>Matcha Ice Blend
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body text-center">
+              <img
+                src="assets/img/Matcha.png"
+                alt="Matcha Ice Blend"
+                class="img-fluid rounded-4 mb-3 shadow"
+                style="max-width: 220px"
+              />
+              <p
+                class="mt-3 mb-0"
+                style="
+                  font-family: 'Raleway', sans-serif;
+                  font-size: 1.15rem;
+                  color: #444;
+                "
+              >
+                Ice blend matcha dengan aroma teh hijau yang khas dan
+                menenangkan.
+              </p>
+            </div>
+            <div class="modal-footer border-0 pt-0">
+              
+            </div>
+          </div>
+        </div>
+      </div>
       <div id="contact" class="container text-center pt-4 pb-5">
         <div class="row">
           <div class="col-lg-8 mx-auto">
