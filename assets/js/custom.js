@@ -37,8 +37,6 @@ function showSlideInOnScroll() {
 }
 window.addEventListener("scroll", showSlideInOnScroll);
 window.addEventListener("DOMContentLoaded", showSlideInOnScroll);
-
-// Jika klik menu tentang, animasi ulang
 document.querySelectorAll('a[href="#about"]').forEach((link) => {
   link.addEventListener("click", function () {
     const img = document.querySelector("#about .slide-in");
@@ -63,7 +61,6 @@ window.addEventListener("DOMContentLoaded", showSlideInOnScroll);
 window.addEventListener("DOMContentLoaded", function () {
   document.querySelector(".underline-animate")?.classList.add("active");
 });
-// Jika klik menu tentang, animasi ulang untuk .slide-in-left
 document.querySelectorAll('a[href="#about"]').forEach((link) => {
   link.addEventListener("click", function () {
     const img = document.querySelector("#about .slide-in-left");
@@ -73,4 +70,7 @@ document.querySelectorAll('a[href="#about"]').forEach((link) => {
       img.classList.add("show");
     }
   });
+});
+window.addEventListener('DOMContentLoaded', function() {
+  document.querySelector('.rainbow-underline')?.classList.add('active');
 });
