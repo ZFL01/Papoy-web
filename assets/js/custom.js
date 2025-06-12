@@ -60,6 +60,9 @@ function showSlideInOnScroll() {
 window.addEventListener("scroll", showSlideInOnScroll);
 window.addEventListener("DOMContentLoaded", showSlideInOnScroll);
 
+window.addEventListener("DOMContentLoaded", function () {
+  document.querySelector(".underline-animate")?.classList.add("active");
+});
 // Jika klik menu tentang, animasi ulang untuk .slide-in-left
 document.querySelectorAll('a[href="#about"]').forEach((link) => {
   link.addEventListener("click", function () {
