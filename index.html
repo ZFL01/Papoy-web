@@ -51,7 +51,7 @@
       }
     </style>
   </head>
-  <body id="home" class="d-flex flex-column h-100">
+  <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="80">
     <nav
       class="navbar navbar-expand-lg navbar-light py-4 bg-nav fixed-top shadow-sm"
     >
@@ -993,7 +993,7 @@
           class="d-flex flex-column flex-md-row align-items-center align-items-md-left text-body"
         >
           <div class="copyright text-center mb-2 mb-md-0">
-            &copy; 2022 -
+            &copy; 2025 -
             <a
               href="https://www.instagram.com/papoyice/"
               target="_blank"
@@ -1062,8 +1062,6 @@
           });
         });
       });
-
-      // Slide-in animasi untuk img di about saat scroll/klik menu Tentang
       function showSlideInOnScroll() {
         document.querySelectorAll(".slide-in").forEach((el) => {
           const rect = el.getBoundingClientRect();

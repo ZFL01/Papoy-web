@@ -74,3 +74,33 @@ document.querySelectorAll('a[href="#about"]').forEach((link) => {
 window.addEventListener('DOMContentLoaded', function() {
   document.querySelector('.rainbow-underline')?.classList.add('active');
 });
+window.addEventListener('scroll', function() {
+  const sections = document.querySelectorAll('section[id]');
+  const scrollPos = window.scrollY + 100; // offset navbar
+  let found = false;
+  sections.forEach(section => {
+    const top = section.offsetTop;
+    const bottom = top + section.offsetHeight;
+    const id = section.getAttribute('id');
+    const navLink = document.querySelector(`a[href="#${id}"]`);
+    if (scrollPos >= top && scrollPos < bottom) {
+      navLink?.classList.add('active');
+      found = true;
+    } else {
+      navLink?.classList.remove('active');
+    }
+  });
+
+  // Jika sudah mentok ke bawah, paksa menu terakhir aktif
+  if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 2) {
+    sections.forEach(section => {
+      const id = section.getAttribute('id');
+      const navLink = document.querySelector(`a[href="#${id}"]`);
+      navLink?.classList.remove('active');
+    });
+    const lastSection = sections[sections.length - 1];
+    const lastId = lastSection.getAttribute('id');
+    const lastNavLink = document.querySelector(`a[href="#${lastId}"]`);
+    lastNavLink?.classList.add('active');
+  }
+});
