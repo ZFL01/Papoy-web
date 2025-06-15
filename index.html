@@ -1,1088 +1,953 @@
 <!DOCTYPE html>
 <html lang="id" class="h-100">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Papoy Ice - Minuman Ice Blend Segar dan Kekinian"
-    />
-    <title>Papoy Ice</title>
-    <link rel="shortcut icon" href="assets/img/Papoy.ico" type="image/x-icon" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <style>
-      .navbar {
-        transition: box-shadow 0.2s;
-      }
-      .navbar.fixed-top {
-        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
-        z-index: 1030;
-      }
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Papoy Ice - Minuman Ice Blend Segar dan Kekinian" />
+  <title>Papoy Ice</title>
+  <link rel="shortcut icon" href="assets/img/Papoy.ico" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    .navbar {
+      transition: box-shadow 0.2s;
+    }
+
+    .navbar.fixed-top {
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+      z-index: 1030;
+    }
+
+    body {
+      padding-top: 100px;
+    }
+
+    @media (max-width: 991.98px) {
       body {
-        padding-top: 100px;
+        padding-top: 120px;
       }
-      @media (max-width: 991.98px) {
-        body {
-          padding-top: 120px;
-        }
-      }
-      .slide-in {
-        opacity: 0;
-        transform: translateX(60px);
-        transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1),
-          transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
-      }
-      .slide-in.show {
-        opacity: 1;
-        transform: translateX(0);
-      }
-    </style>
-  </head>
-  <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="80">
-    <nav
-      class="navbar navbar-expand-lg navbar-light py-4 bg-nav fixed-top shadow-sm"
-    >
-      <div class="container">
-        <a class="navbar-brand" href="#home">
-          <img
-            src="assets/img/Papoy.svg"
-            alt="Papoy Ice"
-            width="42"
-            height="42"
-            class="d-inline-block mt--2 me-2"
-          /><span class="text-body fs-4 fw-bolder">Papoy Ice</span>
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse py-3 py-lg-1"
-          id="navbarSupportedContent"
-        >
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link mx-3" href="#home">Home</a>
+    }
+
+    .slide-in {
+      opacity: 0;
+      transform: translateX(60px);
+      transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+        transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .slide-in.show {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  </style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="80">
+  <nav class="navbar navbar-expand-lg navbar-light py-4 bg-nav fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="#home">
+        <img src="assets/img/Papoy.svg" alt="Papoy Ice" width="42" height="42" class="d-inline-block mt--2 me-2" /><span
+          class="text-body fs-4 fw-bolder">Papoy Ice</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse py-3 py-lg-1" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link mx-3" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-3" href="#services">Layanan</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-3" href="#about">Tentang</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-3" href="#portfolio">Produk</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-3" href="#contact">Kontak</a>
+          </li>
+        </ul>
+        <div class="d-flex mt-3 ms-3 mt-md-0 ms-md-0">
+          <a href="https://www.instagram.com/papoy.ice.drink?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            target="_blank" class="btn btn-social-media me-3"><i class="bi bi-instagram"></i></a>
+          <a href="https://wa.me/6281377783334" target="_blank" class="btn btn-social-media me-3"><i
+              class="bi bi-whatsapp"></i></a>
+          <a href="https://www.tiktok.com/@papoy.ice.drink" target="_blank" class="btn btn-social-media me-3"><i
+              class="bi bi-tiktok"></i></a>
+          <button id="toggle-dark" class="btn btn-outline-secondary ms-3" title="Toggle dark mode">
+            <i class="bi bi-moon"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="flex-shrink-0">
+    <div class="container col-xxl-8 px-4 py-5" id="home">
+      <div class="row flex-lg-row-reverse align-items-center g-5">
+        <div class="col-lg-5">
+          <img id="heroes-img" src="assets/img/Img.jpg" class="d-block mx-lg-auto img-fluid rounded-4 shadow slide-in"
+            alt="Papoy Ice Blend" loading="lazy" />
+        </div>
+        <div class="col-lg-7">
+          <h1 class="fw-bold lh-2 mb-4">
+            <i class="bi bi-cup-straw text-primary me-2"></i>
+            Segarnya Ice Blend Kekinian, Hanya di
+            <span class="text-primary position-relative rainbow-underline">Papoy Ice</span>
+          </h1>
+          <p class="lead mb-5">
+            Nikmati berbagai varian rasa ice blend segar, enak, dan kekinian.
+            Cocok untuk semua suasana, dari nongkrong bareng teman hingga
+            acara keluarga. Papoy Ice, pilihan tepat pelepas dahaga!
+          </p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <a href="https://wa.me/6285600254054?text=Halo%20Papoy%20Ice,%20saya%20mau%20order%20ice%20blend!"
+              class="btn btn-primary rounded-pill px-4 py-2">
+              <i class="bi bi-whatsapp me-2"></i> Pesan Sekarang
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="services" class="container text-center py-5">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h3 class="fw-bold lh-2 mb-3">
+            <i class="bi bi-stars text-warning me-2"></i>LAYANAN KAMI
+          </h3>
+          <p class="lead">
+            Papoy Ice menyediakan layanan terbaik untuk Anda, mulai dari
+            penjualan cup, paket franchise, hingga pemesanan untuk event dan
+            acara.
+          </p>
+        </div>
+      </div>
+      <div class="row py-4">
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <div class="card border-0 rounded-4 shadow-sm h-100">
+            <div class="card-body p-3 p-sm-5 text-center">
+              <div class="feature-icon-1 bg-primary bg-gradient mb-4 mx-auto">
+                <i class="bi bi-cup-straw"></i>
+              </div>
+              <h3 class="mb-2">Penjualan Ice Cup</h3>
+              <p>
+                Tersedia berbagai varian rasa ice blend dalam kemasan cup siap
+                minum, cocok untuk dinikmati kapan saja.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <div class="card border-0 rounded-4 shadow-sm h-100">
+            <div class="card-body p-3 p-sm-5 text-center">
+              <div class="feature-icon-1 bg-success bg-gradient mb-4 mx-auto">
+                <i class="bi bi-shop"></i>
+              </div>
+              <h3 class="mb-2">Paket Franchise</h3>
+              <p>
+                Ingin punya usaha sendiri? Gabung menjadi mitra Papoy Ice dan
+                dapatkan paket franchise menarik!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <div class="card border-0 rounded-4 shadow-sm h-100">
+            <div class="card-body p-3 p-sm-5 text-center">
+              <div class="feature-icon-1 bg-warning bg-gradient mb-4 mx-auto">
+                <i class="bi bi-calendar-event"></i>
+              </div>
+              <h3 class="mb-2">Pemesanan Event</h3>
+              <p>
+                Sediakan Papoy Ice untuk acara ulang tahun, gathering,
+                seminar, dan event lainnya. Harga spesial untuk pemesanan
+                banyak!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="about" class="container text-center py-5">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h3 class="fw-bold lh-2 mb-3">
+            <i class="bi bi-info-circle text-info me-2"></i>TENTANG PAPOY ICE
+          </h3>
+          <p class="lead">
+            Papoy Ice berdiri sejak 2022 sebagai penyedia minuman ice blend
+            segar dan kekinian di Indonesia. Kami berkomitmen menghadirkan
+            minuman berkualitas dengan harga terjangkau.
+          </p>
+        </div>
+      </div>
+      <div class="row align-items-center text-start g-5 py-4">
+        <div class="col-lg-5 position-relative">
+          <div class="bg-about position-absolute top-0 start-0 w-100 h-100 rounded-4"></div>
+          <img src="assets/img/PapoyImg.jpg" class="d-block mx-lg-auto img-fluid position-relative slide-in-left"
+            alt="Tentang Papoy Ice" loading="lazy" style="z-index: 1" />
+        </div>
+        <div class="col-lg-7">
+          <h4 class="fw-bold lh-2 mb-3">Kenapa Memilih Papoy Ice?</h4>
+          <ul>
+            <li>
+              <i class="bi bi-check-circle-fill text-success me-2"></i>Bahan
+              berkualitas dan higienis
             </li>
-            <li class="nav-item">
-              <a class="nav-link mx-3" href="#services">Layanan</a>
+            <li>
+              <i class="bi bi-check-circle-fill text-success me-2"></i>Varian
+              rasa lengkap dan kekinian
             </li>
-            <li class="nav-item">
-              <a class="nav-link mx-3" href="#about">Tentang</a>
+            <li>
+              <i class="bi bi-check-circle-fill text-success me-2"></i>Harga
+              terjangkau untuk semua kalangan
             </li>
-            <li class="nav-item">
-              <a class="nav-link mx-3" href="#portfolio">Produk</a>
+            <li>
+              <i class="bi bi-check-circle-fill text-success me-2"></i>Bisa
+              pesan untuk event dan franchise
             </li>
-            <li class="nav-item">
-              <a class="nav-link mx-3" href="#contact">Kontak</a>
+            <li>
+              <i class="bi bi-check-circle-fill text-success me-2"></i>Pelayanan ramah dan cepat
             </li>
           </ul>
-          <div class="d-flex mt-3 ms-3 mt-md-0 ms-md-0">
-            <a
-              href="https://www.instagram.com/papoy.ice.drink?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-              target="_blank"
-              class="btn btn-social-media me-3"
-              ><i class="bi bi-instagram"></i
-            ></a>
-            <a
-              href="https://wa.me/6281377783334"
-              target="_blank"
-              class="btn btn-social-media me-3"
-              ><i class="bi bi-whatsapp"></i
-            ></a>
-            <a
-              href="https://www.tiktok.com/@papoy.ice.drink"
-              target="_blank"
-              class="btn btn-social-media me-3"
-              ><i class="bi bi-tiktok"></i
-            ></a>
-            <button
-              id="toggle-dark"
-              class="btn btn-outline-secondary ms-3"
-              title="Toggle dark mode"
-            >
-              <i class="bi bi-moon"></i>
-            </button>
-          </div>
+          <p>
+            Kami selalu berinovasi menghadirkan rasa baru dan promo menarik
+            setiap bulannya. Jadikan hari-harimu lebih segar bersama Papoy
+            Ice!
+          </p>
         </div>
       </div>
-    </nav>
+    </div>
 
-    <main class="flex-shrink-0">
-      <div class="container col-xxl-8 px-4 py-5" id="home">
-        <div class="row flex-lg-row-reverse align-items-center g-5">
-          <div class="col-lg-5">
-            <img
-              id="heroes-img"
-              src="assets/img/Img.jpg"
-              class="d-block mx-lg-auto img-fluid rounded-4 shadow slide-in"
-              alt="Papoy Ice Blend"
-              loading="lazy"
-            />
-          </div>
-          <div class="col-lg-7">
-            <h1 class="fw-bold lh-2 mb-4">
-              <i class="bi bi-cup-straw text-primary me-2"></i>
-              Segarnya Ice Blend Kekinian, Hanya di
-              <span class="text-primary position-relative rainbow-underline">Papoy Ice</span>
-            </h1>
-            <p class="lead mb-5">
-              Nikmati berbagai varian rasa ice blend segar, enak, dan kekinian.
-              Cocok untuk semua suasana, dari nongkrong bareng teman hingga
-              acara keluarga. Papoy Ice, pilihan tepat pelepas dahaga!
-            </p>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-              <a
-                href="https://wa.me/6285600254054?text=Halo%20Papoy%20Ice,%20saya%20mau%20order%20ice%20blend!"
-                class="btn btn-primary rounded-pill px-4 py-2"
-              >
-                <i class="bi bi-whatsapp me-2"></i> Pesan Sekarang
-              </a>
-            </div>
-          </div>
+    <div id="portfolio" class="container text-center py-5 produk-section">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h3 class="fw-bold lh-2 mb-3">
+            <i class="bi bi-collection text-danger me-2"></i>VARIAN PRODUK
+          </h3>
+          <p class="lead">
+            Pilih varian rasa favoritmu! Semua produk Papoy Ice dibuat dari
+            bahan pilihan dan disajikan segar secara langsung tiap hari.
+          </p>
         </div>
       </div>
-
-      <div id="services" class="container text-center py-5">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h3 class="fw-bold lh-2 mb-3">
-              <i class="bi bi-stars text-warning me-2"></i>LAYANAN KAMI
-            </h3>
-            <p class="lead">
-              Papoy Ice menyediakan layanan terbaik untuk Anda, mulai dari
-              penjualan cup, paket franchise, hingga pemesanan untuk event dan
-              acara.
-            </p>
-          </div>
-        </div>
-        <div class="row py-4">
-          <div class="col-lg-4 mb-4 mb-lg-0">
-            <div class="card border-0 rounded-4 shadow-sm h-100">
-              <div class="card-body p-3 p-sm-5 text-center">
-                <div class="feature-icon-1 bg-primary bg-gradient mb-4 mx-auto">
-                  <i class="bi bi-cup-straw"></i>
-                </div>
-                <h3 class="mb-2">Penjualan Cup</h3>
-                <p>
-                  Tersedia berbagai varian rasa ice blend dalam kemasan cup siap
-                  minum, cocok untuk dinikmati kapan saja.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 mb-4 mb-lg-0">
-            <div class="card border-0 rounded-4 shadow-sm h-100">
-              <div class="card-body p-3 p-sm-5 text-center">
-                <div class="feature-icon-1 bg-success bg-gradient mb-4 mx-auto">
-                  <i class="bi bi-shop"></i>
-                </div>
-                <h3 class="mb-2">Paket Franchise</h3>
-                <p>
-                  Ingin punya usaha sendiri? Gabung menjadi mitra Papoy Ice dan
-                  dapatkan paket franchise menarik!
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 mb-4 mb-lg-0">
-            <div class="card border-0 rounded-4 shadow-sm h-100">
-              <div class="card-body p-3 p-sm-5 text-center">
-                <div class="feature-icon-1 bg-warning bg-gradient mb-4 mx-auto">
-                  <i class="bi bi-calendar-event"></i>
-                </div>
-                <h3 class="mb-2">Pemesanan Event</h3>
-                <p>
-                  Sediakan Papoy Ice untuk acara ulang tahun, gathering,
-                  seminar, dan event lainnya. Harga spesial untuk pemesanan
-                  banyak!
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="about" class="container text-center py-5">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h3 class="fw-bold lh-2 mb-3">
-              <i class="bi bi-info-circle text-info me-2"></i>TENTANG PAPOY ICE
-            </h3>
-            <p class="lead">
-              Papoy Ice berdiri sejak 2022 sebagai pelopor minuman ice blend
-              segar dan kekinian di Indonesia. Kami berkomitmen menghadirkan
-              minuman berkualitas dengan harga terjangkau.
-            </p>
-          </div>
-        </div>
-        <div class="row align-items-center text-start g-5 py-4">
-          <div class="col-lg-5 position-relative">
+      <div class="row text-start py-4">
+        <!-- 1 -->
+        <div class="col-lg-4 mb-4">
+          <div class="card h-100 border-0 rounded-4 shadow-sm" data-bs-toggle="modal" data-bs-target="#chocolateModal"
+            style="cursor: pointer;">
             <div
-              class="bg-about position-absolute top-0 start-0 w-100 h-100 rounded-4"
-            ></div>
-            <img
-              src="assets/img/PapoyImg.jpg"
-              class="d-block mx-lg-auto img-fluid position-relative slide-in-left"
-              alt="Tentang Papoy Ice"
-              loading="lazy"
-              style="z-index: 1"
-            />
-          </div>
-          <div class="col-lg-7">
-            <h4 class="fw-bold lh-2 mb-3">Kenapa Memilih Papoy Ice?</h4>
-            <ul>
-              <li>
-                <i class="bi bi-check-circle-fill text-success me-2"></i>Bahan
-                berkualitas dan higienis
-              </li>
-              <li>
-                <i class="bi bi-check-circle-fill text-success me-2"></i>Varian
-                rasa lengkap dan kekinian
-              </li>
-              <li>
-                <i class="bi bi-check-circle-fill text-success me-2"></i>Harga
-                terjangkau untuk semua kalangan
-              </li>
-              <li>
-                <i class="bi bi-check-circle-fill text-success me-2"></i>Bisa
-                pesan untuk event dan franchise
-              </li>
-              <li>
-                <i class="bi bi-check-circle-fill text-success me-2"></i
-                >Pelayanan ramah dan cepat
-              </li>
-            </ul>
-            <p>
-              Kami selalu berinovasi menghadirkan rasa baru dan promo menarik
-              setiap bulannya. Jadikan hari-harimu lebih segar bersama Papoy
-              Ice!
-            </p>
+              class="card-body d-flex flex-column align-items-center justify-content-between h-100 p-4 pb-0 text-center">
+              <img src="assets/img/chocolate-1.png" alt="Chocolate Blend"
+                class="card-img-top img-fluid rounded-4 mb-3" />
+              <p class="fw-semibold mt-auto mb-3">
+                <i class="bi bi-cup-hot text-primary me-2"></i>Chocolate Ice Blend
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-
-      <div id="portfolio" class="container text-center py-5">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h3 class="fw-bold lh-2 mb-3">
-              <i class="bi bi-collection text-danger me-2"></i>VARIAN PRODUK
-            </h3>
-            <p class="lead">
-              Pilih varian rasa favoritmu! Semua produk Papoy Ice dibuat dari
-              bahan pilihan dan disajikan segar setiap hari.
-            </p>
-          </div>
-        </div>
-        <div class="row text-start py-4">
-  <!-- 1 -->
-  <div class="col-lg-4 mb-4">
-    <div class="card h-100 border-0 rounded-4 shadow-sm"
-         data-bs-toggle="modal" data-bs-target="#chocolateModal"
-         style="cursor: pointer;">
-      <div class="card-body d-flex flex-column align-items-center justify-content-between h-100 p-4 pb-0 text-center">
-        <img
-          src="assets/img/chocolate-1.png"
-          alt="Chocolate Blend"
-          class="card-img-top img-fluid rounded-4 mb-3"
-        />
-        <p class="fw-semibold mt-auto mb-3">
-          <i class="bi bi-cup-hot text-primary me-2"></i>Chocolate Ice Blend
-        </p>
-      </div>
-    </div>
-  </div>
-  <!-- 2 -->
-  <div class="col-lg-4 mb-4">
-    <div class="card h-100 border-0 rounded-4 shadow-sm"
-         data-bs-toggle="modal" data-bs-target="#taroModal"
-         style="cursor: pointer;">
-      <div class="card-body d-flex flex-column align-items-center justify-content-between h-100 p-4 pb-0 text-center">
-        <img
-          src="assets/img/Taro.png"
-          alt="Taro Ice Blend"
-          class="card-img-top img-fluid rounded-4 mb-3"
-        />
-        <p class="fw-semibold mt-auto mb-3">
-          <i class="bi bi-cup-hot text-purple me-2"></i>Taro Ice Blend
-        </p>
-      </div>
-    </div>
-  </div>
-  <!-- 3 -->
-  <div class="col-lg-4 mb-4">
-    <div class="card h-100 border-0 rounded-4 shadow-sm"
-         data-bs-toggle="modal" data-bs-target="#strawberryModal"
-         style="cursor: pointer;">
-      <div class="card-body d-flex flex-column align-items-center justify-content-between h-100 p-4 pb-0 text-center">
-        <img
-          src="assets/img/Strawberry.png"
-          alt="Strawberry Ice Blend"
-          class="card-img-top img-fluid rounded-4 mb-3"
-        />
-        <p class="fw-semibold mt-auto mb-3">
-          <i class="bi bi-cup-hot text-danger me-2"></i>Strawberry Ice Blend
-        </p>
-      </div>
-    </div>
-  </div>
-  <!-- 4 -->
-  <div class="col-lg-4 mb-4">
-    <div class="card h-100 border-0 rounded-4 shadow-sm"
-         data-bs-toggle="modal" data-bs-target="#manggaModal"
-         style="cursor: pointer;">
-      <div class="card-body d-flex flex-column align-items-center justify-content-between h-100 p-4 pb-0 text-center">
-        <img
-          src="assets/img/Mangga.png"
-          alt="Mangga Ice Blend"
-          class="card-img-top img-fluid rounded-4 mb-3"
-        />
-        <p class="fw-semibold mt-auto mb-3">
-          <i class="bi bi-cup-hot text-warning me-2"></i>Mangga Ice Blend
-        </p>
-      </div>
-    </div>
-  </div>
-  <!-- 5 -->
-  <div class="col-lg-4 mb-4">
-    <div class="card h-100 border-0 rounded-4 shadow-sm"
-         data-bs-toggle="modal" data-bs-target="#matchaModal"
-         style="cursor: pointer;">
-      <div class="card-body d-flex flex-column align-items-center justify-content-between h-100 p-4 pb-0 text-center">
-        <img
-          src="assets/img/Matcha.png"
-          alt="Matcha Ice Blend"
-          class="card-img-top img-fluid rounded-4 mb-3"
-        />
-        <p class="fw-semibold mt-auto mb-3">
-          <i class="bi bi-cup-hot text-success me-2"></i>Matcha Ice Blend
-        </p>
-      </div>
-    </div>
-  </div>
-  <!-- 6 -->
-  <div class="col-lg-4 mb-4">
-    <div class="card h-100 border-0 rounded-4 shadow-sm"
-         data-bs-toggle="modal" data-bs-target="#vanillaModal"
-         style="cursor: pointer;">
-      <div class="card-body d-flex flex-column align-items-center justify-content-between h-100 p-4 pb-0 text-center">
-        <img
-          src="assets/img/Vanilla.png"
-          alt="Vanilla Ice Blend"
-          class="card-img-top img-fluid rounded-4 mb-3"
-        />
-        <p class="fw-semibold mt-auto mb-3">
-          <i class="bi bi-cup-hot text-success me-2"></i>Vanilla Ice Blend
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-      <!-- Modal Taro Ice Blend -->
-      <div
-        class="modal fade"
-        id="taroModal"
-        tabindex="-1"
-        aria-labelledby="taroModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content rounded-4">
-            <div class="modal-header border-0 pb-0">
-              <h5
-                class="modal-title fw-bold"
-                id="taroModalLabel"
-                style="
-                  font-family: 'Raleway', sans-serif;
-                  font-size: 2rem;
-                  letter-spacing: 0.5px;
-                  color: #222;
-                "
-              >
+        <!-- 2 -->
+        <div class="col-lg-4 mb-4">
+          <div class="card h-100 border-0 rounded-4 shadow-sm" data-bs-toggle="modal" data-bs-target="#taroModal"
+            style="cursor: pointer;">
+            <div
+              class="card-body d-flex flex-column align-items-center justify-content-between h-100 p-4 pb-0 text-center">
+              <img src="assets/img/Taro.png" alt="Taro Ice Blend" class="card-img-top img-fluid rounded-4 mb-3" />
+              <p class="fw-semibold mt-auto mb-3">
                 <i class="bi bi-cup-hot text-purple me-2"></i>Taro Ice Blend
-              </h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body text-center">
-              <img
-                src="assets/img/Taro.png"
-                alt="Taro Ice Blend"
-                class="img-fluid rounded-4 mb-3 shadow"
-                style="max-width: 220px"
-              />
-              <p
-                class="mt-3 mb-0"
-                style="
-                  font-family: 'Raleway', sans-serif;
-                  font-size: 1.15rem;
-                  color: #444;
-                "
-              >
-                Minuman ice blend rasa taro yang creamy dan segar, cocok untuk
-                segala suasana!
               </p>
-            </div>
-            <div class="modal-footer border-0 pt-0">
             </div>
           </div>
         </div>
-      </div>
-      <!-- Modal Chocolate Ice Blend -->
-      <div
-        class="modal fade"
-        id="chocolateModal"
-        tabindex="-1"
-        aria-labelledby="chocolateModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content rounded-4">
-            <div class="modal-header border-0 pb-0">
-              <h5 class="modal-title fw-bold" id="chocolateModalLabel"style="
-                  font-family: 'Raleway', sans-serif;
-                  font-size: 2rem;
-                  letter-spacing: 0.5px;
-                  color: #222;
-                ">
-                <i class="bi bi-cup-hot text-primary me-2"></i>Chocolate Ice
-                Blend
-              </h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body text-center">
-              <img
-                src="assets/img/chocolate-1.png"
-                alt="Chocolate Ice Blend"
-                class="img-fluid rounded-4 mb-3 shadow"
-                style="max-width: 220px"
-              />
-              <p
-                class="mt-3 mb-0"
-                style="
-                  font-family: 'Raleway', sans-serif;
-                  font-size: 1.15rem;
-                  color: #444;
-                "
-              >
-                Ice blend rasa coklat premium, manis dan nikmat untuk semua
-                suasana!
+        <!-- 3 -->
+        <div class="col-lg-4 mb-4">
+          <div class="card h-100 border-0 rounded-4 shadow-sm" data-bs-toggle="modal" data-bs-target="#strawberryModal"
+            style="cursor: pointer;">
+            <div
+              class="card-body d-flex flex-column align-items-center justify-content-between h-100 p-4 pb-0 text-center">
+              <img src="assets/img/Strawberry.png" alt="Strawberry Ice Blend"
+                class="card-img-top img-fluid rounded-4 mb-3" />
+              <p class="fw-semibold mt-auto mb-3">
+                <i class="bi bi-cup-hot text-danger me-2"></i>Strawberry Ice Blend
               </p>
-            </div>
-            <div class="modal-footer border-0 pt-0">
-              
             </div>
           </div>
         </div>
-      </div>
-      <!-- Modal Vanilla Ice Blend -->
-      <div
-        class="modal fade"
-        id="vanillaModal"
-        tabindex="-1"
-        aria-labelledby="vanillaModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content rounded-4">
-            <div class="modal-header border-0 pb-0">
-              <h5 class="modal-title fw-bold" id="vanillaModalLabel" style="
-                  font-family: 'Raleway', sans-serif;
-                  font-size: 2rem;
-                  letter-spacing: 0.5px;
-                  color: #222;
-                ">
+        <!-- 4 -->
+        <div class="col-lg-4 mb-4">
+          <div class="card h-100 border-0 rounded-4 shadow-sm" data-bs-toggle="modal" data-bs-target="#manggaModal"
+            style="cursor: pointer;">
+            <div
+              class="card-body d-flex flex-column align-items-center justify-content-between h-100 p-4 pb-0 text-center">
+              <img src="assets/img/Mangga.png" alt="Mangga Ice Blend" class="card-img-top img-fluid rounded-4 mb-3" />
+              <p class="fw-semibold mt-auto mb-3">
+                <i class="bi bi-cup-hot text-warning me-2"></i>Mangga Ice Blend
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- 5 -->
+        <div class="col-lg-4 mb-4">
+          <div class="card h-100 border-0 rounded-4 shadow-sm" data-bs-toggle="modal" data-bs-target="#matchaModal"
+            style="cursor: pointer;">
+            <div
+              class="card-body d-flex flex-column align-items-center justify-content-between h-100 p-4 pb-0 text-center">
+              <img src="assets/img/Matcha.png" alt="Matcha Ice Blend" class="card-img-top img-fluid rounded-4 mb-3" />
+              <p class="fw-semibold mt-auto mb-3">
+                <i class="bi bi-cup-hot text-success me-2"></i>Matcha Ice Blend
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- 6 -->
+        <div class="col-lg-4 mb-4">
+          <div class="card h-100 border-0 rounded-4 shadow-sm" data-bs-toggle="modal" data-bs-target="#vanillaModal"
+            style="cursor: pointer;">
+            <div
+              class="card-body d-flex flex-column align-items-center justify-content-between h-100 p-4 pb-0 text-center">
+              <img src="assets/img/Vanilla.png" alt="Vanilla Ice Blend" class="card-img-top img-fluid rounded-4 mb-3" />
+              <p class="fw-semibold mt-auto mb-3">
                 <i class="bi bi-cup-hot text-success me-2"></i>Vanilla Ice Blend
-              </h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body text-center">
-              <img
-                src="assets/img/Vanilla.png"
-                alt="Vanilla Ice Blend"
-                class="img-fluid rounded-4 mb-3 shadow"
-                style="max-width: 220px"
-              />
-              <p
-                class="mt-3 mb-0"
-                style="
-                  font-family: 'Raleway', sans-serif;
-                  font-size: 1.15rem;
-                  color: #444;
-                "
-              >
-                Kelembutan rasa vanilla yang creamy, cocok untuk segala suasana.
               </p>
-            </div>
-            <div class="modal-footer border-0 pt-0">
             </div>
           </div>
         </div>
-      </div>
-      <!-- Modal Strawberry Ice Blend -->
-      <div
-        class="modal fade"
-        id="strawberryModal"
-        tabindex="-1"
-        aria-labelledby="strawberryModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content rounded-4">
-            <div class="modal-header border-0 pb-0">
-              <h5 class="modal-title fw-bold" id="strawberryModalLabel" style="
-                  font-family: 'Raleway', sans-serif;
-                  font-size: 2rem;
-                  letter-spacing: 0.5px;
-                  color: #222;
-                ">
-                <i class="bi bi-cup-hot text-danger me-2"></i>Strawberry Ice
-                Blend
-              </h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body text-center">
-              <img
-                src="assets/img/Strawberry.png"
-                alt="Strawberry Ice Blend"
-                class="img-fluid rounded-4 mb-3 shadow"
-                style="max-width: 220px"
-              />
-              <p
-                class="mt-3 mb-0"
-                style="
-                  font-family: 'Raleway', sans-serif;
-                  font-size: 1.15rem;
-                  color: #444;
-                "
-              >
-                Kesegaran buah stroberi asli dalam setiap tegukan ice blend ini!
+        <!-- 7 -->
+        <div class="col-lg-4 mb-4">
+          <div class="card h-100 border-0 rounded-4 shadow-sm" data-bs-toggle="modal" data-bs-target="#JerukModal"
+            style="cursor: pointer;">
+            <div
+              class="card-body d-flex flex-column align-items-center justify-content-between h-100 p-4 pb-0 text-center">
+              <img src="assets/img/Jeruk.png" alt="Orange Ice Blend" class="card-img-top img-fluid rounded-4 mb-3" />
+              <p class="fw-semibold mt-auto mb-3">
+                <i class="bi bi-cup-hot text-success me-2"></i>Orange Ice Blend
               </p>
-            </div>
-            <div class="modal-footer border-0 pt-0">
-              
             </div>
           </div>
         </div>
-      </div>
-      <!-- Modal Mangga Ice Blend -->
-      <div
-        class="modal fade"
-        id="manggaModal"
-        tabindex="-1"
-        aria-labelledby="manggaModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content rounded-4">
-            <div class="modal-header border-0 pb-0">
-              <h5 class="modal-title fw-bold" id="manggaModalLabel" style="
-                  font-family: 'Raleway', sans-serif;
-                  font-size: 2rem;
-                  letter-spacing: 0.5px;
-                  color: #222;
-                ">
-                <i class="bi bi-cup-hot text-warning me-2"></i>Mangga Ice Blend
-              </h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body text-center">
-              <img
-                src="assets/img/Mangga.png"
-                alt="Mangga Ice Blend"
-                class="img-fluid rounded-4 mb-3 shadow"
-                style="max-width: 220px"
-              />
-              <p
-                class="mt-3 mb-0"
-                style="
-                  font-family: 'Raleway', sans-serif;
-                  font-size: 1.15rem;
-                  color: #444;
-                "
-              >
-                Rasakan segarnya mangga pilihan dalam ice blend yang
-                menyegarkan!
-              </p>
-            </div>
-            <div class="modal-footer border-0 pt-0">
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Modal Matcha Ice Blend -->
-      <div
-        class="modal fade"
-        id="matchaModal"
-        tabindex="-1"
-        aria-labelledby="matchaModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content rounded-4">
-            <div class="modal-header border-0 pb-0">
-              <h5 class="modal-title fw-bold" id="matchaModalLabel" style="
-                  font-family: 'Raleway', sans-serif;
-                  font-size: 2rem;
-                  letter-spacing: 0.5px;
-                  color: #222;
-                ">
-                <i class="bi bi-cup-hot text-success me-2"></i>Matcha Ice Blend
-              </h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body text-center">
-              <img
-                src="assets/img/Matcha.png"
-                alt="Matcha Ice Blend"
-                class="img-fluid rounded-4 mb-3 shadow"
-                style="max-width: 220px"
-              />
-              <p
-                class="mt-3 mb-0"
-                style="
-                  font-family: 'Raleway', sans-serif;
-                  font-size: 1.15rem;
-                  color: #444;
-                "
-              >
-                Ice blend matcha dengan aroma teh hijau yang khas dan
-                menenangkan.
-              </p>
-            </div>
-            <div class="modal-footer border-0 pt-0">
-              
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Modal Chocolate Ice Blend -->
-      <div
-        class="modal fade"
-        id="chocolateModal"
-        tabindex="-1"
-        aria-labelledby="chocolateModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content rounded-4">
-            <div class="modal-header border-0 pb-0">
-              <h5 class="modal-title fw-bold" id="chocolateModalLabel" style="
-                  font-family: 'Raleway', sans-serif;
-                  font-size: 2rem;
-                  letter-spacing: 0.5px;
-                  color: #222;
-                ">
-                <i class="bi bi-cup-hot text-primary me-2"></i>Chocolate Ice
-                Blend
-              </h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body text-center">
-              <img
-                src="assets/img/chocolate-1.png"
-                alt="Chocolate Ice Blend"
-                class="img-fluid rounded-4 mb-3 shadow"
-                style="max-width: 220px"
-              />
-              <p
-                class="mt-3 mb-0"
-                style="
-                  font-family: 'Raleway', sans-serif;
-                  font-size: 1.15rem;
-                  color: #444;
-                "
-              >
-                Ice blend rasa coklat premium, manis dan nikmat untuk semua
-                suasana!
-              </p>
-            </div>
-            <div class="modal-footer border-0 pt-0">
-              
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Modal Strawberry Ice Blend -->
-      <div
-        class="modal fade"
-        id="strawberryModal"
-        tabindex="-1"
-        aria-labelledby="strawberryModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content rounded-4">
-            <div class="modal-header border-0 pb-0">
-              <h5 class="modal-title fw-bold" id="strawberryModalLabel" style="
-                  font-family: 'Raleway', sans-serif;
-                  font-size: 2rem;
-                  letter-spacing: 0.5px;
-                  color: #222;
-                ">
-                <i class="bi bi-cup-hot text-danger me-2"></i>Strawberry Ice
-                Blend
-              </h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body text-center">
-              <img
-                src="assets/img/Strawberry.png"
-                alt="Strawberry Ice Blend"
-                class="img-fluid rounded-4 mb-3 shadow"
-                style="max-width: 220px"
-              />
-              <p
-                class="mt-3 mb-0"
-                style="
-                  font-family: 'Raleway', sans-serif;
-                  font-size: 1.15rem;
-                  color: #444;
-                "
-              >
-                Kesegaran buah stroberi asli dalam setiap tegukan ice blend ini!
-              </p>
-            </div>
-            <div class="modal-footer border-0 pt-0">
-             
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Modal Mangga Ice Blend -->
-      <div
-        class="modal fade"
-        id="manggaModal"
-        tabindex="-1"
-        aria-labelledby="manggaModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content rounded-4">
-            <div class="modal-header border-0 pb-0">
-              <h5 class="modal-title fw-bold" id="manggaModalLabel" style="
-                  font-family: 'Raleway', sans-serif;
-                  font-size: 2rem;
-                  letter-spacing: 0.5px;
-                  color: #222;
-                ">
-                <i class="bi bi-cup-hot text-warning me-2"></i>Mangga Ice Blend
-              </h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body text-center">
-              <img
-                src="assets/img/Mangga.png"
-                alt="Mangga Ice Blend"
-                class="img-fluid rounded-4 mb-3 shadow"
-                style="max-width: 220px"
-              />
-              <p
-                class="mt-3 mb-0"
-                style="
-                  font-family: 'Raleway', sans-serif;
-                  font-size: 1.15rem;
-                  color: #444;
-                "
-              >
-                Rasakan segarnya mangga pilihan dalam ice blend yang
-                menyegarkan!
-              </p>
-            </div>
-            <div class="modal-footer border-0 pt-0">
-              
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Modal Matcha Ice Blend -->
-      <div
-        class="modal fade"
-        id="matchaModal"
-        tabindex="-1"
-        aria-labelledby="matchaModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content rounded-4">
-            <div class="modal-header border-0 pb-0">
-              <h5 class="modal-title fw-bold" id="matchaModalLabel" style="
-                  font-family: 'Raleway', sans-serif;
-                  font-size: 2rem;
-                  letter-spacing: 0.5px;
-                  color: #222;
-                ">
-                <i class="bi bi-cup-hot text-success me-2"></i>Matcha Ice Blend
-              </h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body text-center">
-              <img
-                src="assets/img/Matcha.png"
-                alt="Matcha Ice Blend"
-                class="img-fluid rounded-4 mb-3 shadow"
-                style="max-width: 220px"
-              />
-              <p
-                class="mt-3 mb-0"
-                style="
-                  font-family: 'Raleway', sans-serif;
-                  font-size: 1.15rem;
-                  color: #444;
-                "
-              >
-                Ice blend matcha dengan aroma teh hijau yang khas dan
-                menenangkan.
-              </p>
-            </div>
-            <div class="modal-footer border-0 pt-0">
-              
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="contact" class="container text-center pt-4 pb-5">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h3 class="fw-bold lh-2 mb-3">
-              <i class="bi bi-envelope-paper text-primary me-2"></i>KONTAK KAMI
-            </h3>
-            <p class="lead">
-              Hubungi kami untuk pemesanan, kerjasama, atau informasi lebih
-              lanjut tentang Papoy Ice.
+      <!-- 8 -->
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100 border-0 rounded-4 shadow-sm" data-bs-toggle="modal" data-bs-target="#BlueberryModal"
+          style="cursor: pointer;">
+          <div
+            class="card-body d-flex flex-column align-items-center justify-content-between h-100 p-4 pb-0 text-center">
+            <img src="assets/img/Blueberry.png" alt="Blueberry Ice Blend"
+              class="card-img-top img-fluid rounded-4 mb-3" />
+            <p class="fw-semibold mt-auto mb-3">
+              <i class="bi bi-cup-hot text-success me-2"></i>Blueberry Ice Blend
             </p>
           </div>
         </div>
-        <div class="row align-items-start text-start g-5 pt-4 pb-5">
-          <div class="col-lg-7">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.097695404493!2d113.2178107!3d-8.0627107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd65d09df076067%3A0x623c1d12021e35af!2sToko%20Material%20Cahaya!5e0!3m2!1sid!2sid!4v1716360000000!5m2!1sid!2sid"
-              class="rounded-4 shadow-sm"
-              width="100%"
-              height="410"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
+      </div>
+    <!-- 9 -->
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100 border-0 rounded-4 shadow-sm" data-bs-toggle="modal" data-bs-target="#TelangModal"
+          style="cursor: pointer;">
+          <div
+            class="card-body d-flex flex-column align-items-center justify-content-between h-100 p-4 pb-0 text-center">
+            <img src="assets/img/BungaTelang.png" alt="Butterfly Pea Iced Tea"
+              class="card-img-top img-fluid rounded-4 mb-3" />
+            <p class="fw-semibold mt-auto mb-3">
+              <i class="bi bi-cup-hot text-success me-2"></i>Butterfly Pea Iced Tea
+            </p>
           </div>
-          <div class="col-lg-5">
-            <div class="card h-100 border-0 rounded-4 shadow-sm">
-              <div class="card-body p-4 pb-0">
-                <div class="d-flex py-2">
-                  <div class="flex-shrink-0">
-                    <i class="bi bi-geo-alt text-primary fs-3"></i>
-                  </div>
-                  <div class="flex-grow-1 ms-3">
-                    <h5 class="mb-1">Alamat</h5>
-                    <p>
-                      Krajan, Pandansari, Kec. Kedungjajang, Kabupaten Lumajang,
-                      Jawa Timur
-                    </p>
-                  </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- Modal bunga Telang Ice Blend -->
+    <div class="modal fade" id="TelangModal" tabindex="-1" aria-labelledby="BungaTelangModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-4">
+          <div class="modal-header border-0 pb-0">
+            <h5 class="modal-title fw-bold" id="BungaTelangModalLabel" style="
+                  font-family: 'Raleway', sans-serif;
+                  font-size: 2rem;
+                  letter-spacing: 0.5px;
+                  color: #222;
+                ">
+              <i class="bi bi-cup-hot text-purple me-2"></i>Butterfly Pea Iced Tea
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+            <img src="assets/img/BungaTelang.png" alt="Butterfly Pea Iced Tea" class="img-fluid rounded-4 mb-3 shadow"
+              style="max-width: 220px" />
+            <p class="mt-3 mb-0" style="
+                  font-family: 'Raleway', sans-serif;
+                  font-size: 1.15rem;
+                  color: #444;
+                ">
+              Es Teh Bunga Telang , Teh herbal yang menyegarkan, terbuat dari bunga telang,
+              disajikan dalam keadaan dingin. Sheeeshh!
+            </p>
+          </div>
+          <div class="modal-footer border-0 pt-0">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Blueberry Ice Blend -->
+    <div class="modal fade" id="BlueberryModal" tabindex="-1" aria-labelledby="BlueberryModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-4">
+          <div class="modal-header border-0 pb-0">
+            <h5 class="modal-title fw-bold" id="BlueberryModalLabel" style="
+                  font-family: 'Raleway', sans-serif;
+                  font-size: 2rem;
+                  letter-spacing: 0.5px;
+                  color: #222;
+                ">
+              <i class="bi bi-cup-hot text-purple me-2"></i>Blueberry Ice Blend
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+            <img src="assets/img/Blueberry.png" alt="Blueberry Ice Blend" class="img-fluid rounded-4 mb-3 shadow"
+              style="max-width: 220px" />
+            <p class="mt-3 mb-0" style="
+                  font-family: 'Raleway', sans-serif;
+                  font-size: 1.15rem;
+                  color: #444;
+                ">
+              Minuman ice blend rasa Blueberry yang asam manis, bikin mood
+              makin meningkat!
+            </p>
+          </div>
+          <div class="modal-footer border-0 pt-0">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Orange Ice Blend -->
+    <div class="modal fade" id="JerukModal" tabindex="-1" aria-labelledby="JerukModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-4">
+          <div class="modal-header border-0 pb-0">
+            <h5 class="modal-title fw-bold" id="JerukModalLabel" style="
+                  font-family: 'Raleway', sans-serif;
+                  font-size: 2rem;
+                  letter-spacing: 0.5px;
+                  color: #222;
+                ">
+              <i class="bi bi-cup-hot text-purple me-2"></i>Orange Ice Blend
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+            <img src="assets/img/Jeruk.png" alt="Jeruk Ice Blend" class="img-fluid rounded-4 mb-3 shadow"
+              style="max-width: 220px" />
+            <p class="mt-3 mb-0" style="
+                  font-family: 'Raleway', sans-serif;
+                  font-size: 1.15rem;
+                  color: #444;
+                ">
+              Minuman ice blend rasa Jeruk yang segar, cocok untuk
+              cuaca panas!
+            </p>
+          </div>
+          <div class="modal-footer border-0 pt-0">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Taro Ice Blend -->
+    <div class="modal fade" id="taroModal" tabindex="-1" aria-labelledby="taroModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-4">
+          <div class="modal-header border-0 pb-0">
+            <h5 class="modal-title fw-bold" id="taroModalLabel" style="
+                  font-family: 'Raleway', sans-serif;
+                  font-size: 2rem;
+                  letter-spacing: 0.5px;
+                  color: #222;
+                ">
+              <i class="bi bi-cup-hot text-purple me-2"></i>Taro Ice Blend
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+            <img src="assets/img/Taro.png" alt="Taro Ice Blend" class="img-fluid rounded-4 mb-3 shadow"
+              style="max-width: 220px" />
+            <p class="mt-3 mb-0" style="
+                  font-family: 'Raleway', sans-serif;
+                  font-size: 1.15rem;
+                  color: #444;
+                ">
+              Minuman ice blend rasa taro yang creamy dan segar, cocok untuk
+              segala suasana!
+            </p>
+          </div>
+          <div class="modal-footer border-0 pt-0">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Chocolate Ice Blend -->
+    <div class="modal fade" id="chocolateModal" tabindex="-1" aria-labelledby="chocolateModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-4">
+          <div class="modal-header border-0 pb-0">
+            <h5 class="modal-title fw-bold" id="chocolateModalLabel" style="
+                  font-family: 'Raleway', sans-serif;
+                  font-size: 2rem;
+                  letter-spacing: 0.5px;
+                  color: #222;
+                ">
+              <i class="bi bi-cup-hot text-primary me-2"></i>Chocolate Ice
+              Blend
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+            <img src="assets/img/chocolate-1.png" alt="Chocolate Ice Blend" class="img-fluid rounded-4 mb-3 shadow"
+              style="max-width: 220px" />
+            <p class="mt-3 mb-0" style="
+                  font-family: 'Raleway', sans-serif;
+                  font-size: 1.15rem;
+                  color: #444;
+                ">
+              Ice blend rasa coklat premium, manis dan nikmat untuk semua
+              suasana!
+            </p>
+          </div>
+          <div class="modal-footer border-0 pt-0">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Vanilla Ice Blend -->
+    <div class="modal fade" id="vanillaModal" tabindex="-1" aria-labelledby="vanillaModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-4">
+          <div class="modal-header border-0 pb-0">
+            <h5 class="modal-title fw-bold" id="vanillaModalLabel" style="
+                  font-family: 'Raleway', sans-serif;
+                  font-size: 2rem;
+                  letter-spacing: 0.5px;
+                  color: #222;
+                ">
+              <i class="bi bi-cup-hot text-success me-2"></i>Vanilla Ice Blend
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+            <img src="assets/img/Vanilla.png" alt="Vanilla Ice Blend" class="img-fluid rounded-4 mb-3 shadow"
+              style="max-width: 220px" />
+            <p class="mt-3 mb-0" style="
+                  font-family: 'Raleway', sans-serif;
+                  font-size: 1.15rem;
+                  color: #444;
+                ">
+              Kelembutan rasa vanilla yang creamy, cocok untuk segala suasana.
+            </p>
+          </div>
+          <div class="modal-footer border-0 pt-0">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Strawberry Ice Blend -->
+    <div class="modal fade" id="strawberryModal" tabindex="-1" aria-labelledby="strawberryModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-4">
+          <div class="modal-header border-0 pb-0">
+            <h5 class="modal-title fw-bold" id="strawberryModalLabel" style="
+                  font-family: 'Raleway', sans-serif;
+                  font-size: 2rem;
+                  letter-spacing: 0.5px;
+                  color: #222;
+                ">
+              <i class="bi bi-cup-hot text-danger me-2"></i>Strawberry Ice
+              Blend
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+            <img src="assets/img/Strawberry.png" alt="Strawberry Ice Blend" class="img-fluid rounded-4 mb-3 shadow"
+              style="max-width: 220px" />
+            <p class="mt-3 mb-0" style="
+                  font-family: 'Raleway', sans-serif;
+                  font-size: 1.15rem;
+                  color: #444;
+                ">
+              Kesegaran buah stroberi asli dalam setiap tegukan ice blend ini!
+            </p>
+          </div>
+          <div class="modal-footer border-0 pt-0">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Mangga Ice Blend -->
+    <div class="modal fade" id="manggaModal" tabindex="-1" aria-labelledby="manggaModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-4">
+          <div class="modal-header border-0 pb-0">
+            <h5 class="modal-title fw-bold" id="manggaModalLabel" style="
+                  font-family: 'Raleway', sans-serif;
+                  font-size: 2rem;
+                  letter-spacing: 0.5px;
+                  color: #222;
+                ">
+              <i class="bi bi-cup-hot text-warning me-2"></i>Mangga Ice Blend
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+            <img src="assets/img/Mangga.png" alt="Mangga Ice Blend" class="img-fluid rounded-4 mb-3 shadow"
+              style="max-width: 220px" />
+            <p class="mt-3 mb-0" style="
+                  font-family: 'Raleway', sans-serif;
+                  font-size: 1.15rem;
+                  color: #444;
+                ">
+              Rasakan segarnya mangga pilihan dalam ice blend yang
+              menyegarkan!
+            </p>
+          </div>
+          <div class="modal-footer border-0 pt-0">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Matcha Ice Blend -->
+    <div class="modal fade" id="matchaModal" tabindex="-1" aria-labelledby="matchaModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-4">
+          <div class="modal-header border-0 pb-0">
+            <h5 class="modal-title fw-bold" id="matchaModalLabel" style="
+                  font-family: 'Raleway', sans-serif;
+                  font-size: 2rem;
+                  letter-spacing: 0.5px;
+                  color: #222;
+                ">
+              <i class="bi bi-cup-hot text-success me-2"></i>Matcha Ice Blend
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+            <img src="assets/img/Matcha.png" alt="Matcha Ice Blend" class="img-fluid rounded-4 mb-3 shadow"
+              style="max-width: 220px" />
+            <p class="mt-3 mb-0" style="
+                  font-family: 'Raleway', sans-serif;
+                  font-size: 1.15rem;
+                  color: #444;
+                ">
+              Ice blend matcha dengan aroma teh hijau yang khas dan
+              menenangkan.
+            </p>
+          </div>
+          <div class="modal-footer border-0 pt-0">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Chocolate Ice Blend -->
+    <div class="modal fade" id="chocolateModal" tabindex="-1" aria-labelledby="chocolateModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-4">
+          <div class="modal-header border-0 pb-0">
+            <h5 class="modal-title fw-bold" id="chocolateModalLabel" style="
+                  font-family: 'Raleway', sans-serif;
+                  font-size: 2rem;
+                  letter-spacing: 0.5px;
+                  color: #222;
+                ">
+              <i class="bi bi-cup-hot text-primary me-2"></i>Chocolate Ice
+              Blend
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+            <img src="assets/img/chocolate-1.png" alt="Chocolate Ice Blend" class="img-fluid rounded-4 mb-3 shadow"
+              style="max-width: 220px" />
+            <p class="mt-3 mb-0" style="
+                  font-family: 'Raleway', sans-serif;
+                  font-size: 1.15rem;
+                  color: #444;
+                ">
+              Ice blend rasa coklat premium, manis dan nikmat untuk semua
+              suasana!
+            </p>
+          </div>
+          <div class="modal-footer border-0 pt-0">
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Strawberry Ice Blend -->
+    <div class="modal fade" id="strawberryModal" tabindex="-1" aria-labelledby="strawberryModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-4">
+          <div class="modal-header border-0 pb-0">
+            <h5 class="modal-title fw-bold" id="strawberryModalLabel" style="
+                  font-family: 'Raleway', sans-serif;
+                  font-size: 2rem;
+                  letter-spacing: 0.5px;
+                  color: #222;
+                ">
+              <i class="bi bi-cup-hot text-danger me-2"></i>Strawberry Ice
+              Blend
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+            <img src="assets/img/Strawberry.png" alt="Strawberry Ice Blend" class="img-fluid rounded-4 mb-3 shadow"
+              style="max-width: 220px" />
+            <p class="mt-3 mb-0" style="
+                  font-family: 'Raleway', sans-serif;
+                  font-size: 1.15rem;
+                  color: #444;
+                ">
+              Kesegaran buah stroberi asli dalam setiap tegukan ice blend ini!
+            </p>
+          </div>
+          <div class="modal-footer border-0 pt-0">
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Mangga Ice Blend -->
+    <div class="modal fade" id="manggaModal" tabindex="-1" aria-labelledby="manggaModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-4">
+          <div class="modal-header border-0 pb-0">
+            <h5 class="modal-title fw-bold" id="manggaModalLabel" style="
+                  font-family: 'Raleway', sans-serif;
+                  font-size: 2rem;
+                  letter-spacing: 0.5px;
+                  color: #222;
+                ">
+              <i class="bi bi-cup-hot text-warning me-2"></i>Mangga Ice Blend
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+            <img src="assets/img/Mangga.png" alt="Mangga Ice Blend" class="img-fluid rounded-4 mb-3 shadow"
+              style="max-width: 220px" />
+            <p class="mt-3 mb-0" style="
+                  font-family: 'Raleway', sans-serif;
+                  font-size: 1.15rem;
+                  color: #444;
+                ">
+              Rasakan segarnya mangga pilihan dalam ice blend yang
+              menyegarkan!
+            </p>
+          </div>
+          <div class="modal-footer border-0 pt-0">
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Matcha Ice Blend -->
+    <div class="modal fade" id="matchaModal" tabindex="-1" aria-labelledby="matchaModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-4">
+          <div class="modal-header border-0 pb-0">
+            <h5 class="modal-title fw-bold" id="matchaModalLabel" style="
+                  font-family: 'Raleway', sans-serif;
+                  font-size: 2rem;
+                  letter-spacing: 0.5px;
+                  color: #222;
+                ">
+              <i class="bi bi-cup-hot text-success me-2"></i>Matcha Ice Blend
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+            <img src="assets/img/Matcha.png" alt="Matcha Ice Blend" class="img-fluid rounded-4 mb-3 shadow"
+              style="max-width: 220px" />
+            <p class="mt-3 mb-0" style="
+                  font-family: 'Raleway', sans-serif;
+                  font-size: 1.15rem;
+                  color: #444;
+                ">
+              Ice blend matcha dengan aroma teh hijau yang khas dan
+              menenangkan.
+            </p>
+          </div>
+          <div class="modal-footer border-0 pt-0">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="contact" class="container text-center pt-4 pb-5">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h3 class="fw-bold lh-2 mb-3">
+            <i class="bi bi-envelope-paper text-primary me-2"></i>KONTAK KAMI
+          </h3>
+          <p class="lead">
+            Hubungi kami untuk pemesanan, kerjasama, atau informasi lebih
+            lanjut tentang Papoy Ice.
+          </p>
+        </div>
+      </div>
+      <div class="row align-items-start text-start g-5 pt-4 pb-5">
+        <div class="col-lg-7">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.097695404493!2d113.2178107!3d-8.0627107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd65d09df076067%3A0x623c1d12021e35af!2sToko%20Material%20Cahaya!5e0!3m2!1sid!2sid!4v1716360000000!5m2!1sid!2sid"
+            class="rounded-4 shadow-sm" width="100%" height="410" style="border: 0" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="col-lg-5">
+          <div class="card h-100 border-0 rounded-4 shadow-sm">
+            <div class="card-body p-4 pb-0">
+              <div class="d-flex py-2">
+                <div class="flex-shrink-0">
+                  <i class="bi bi-geo-alt text-primary fs-3"></i>
                 </div>
-                <hr class="hr-dotted mt-0" />
-                <div class="d-flex py-2">
-                  <div class="flex-shrink-0">
-                    <i class="bi bi-whatsapp text-primary fs-4"></i>
-                  </div>
-                  <div class="flex-grow-1 ms-3">
-                    <h5 class="mb-1">WhatsApp</h5>
-                    <p>+62 856-0025-4054</p>
-                  </div>
+                <div class="flex-grow-1 ms-3">
+                  <h5 class="mb-1">Alamat</h5>
+                  <p>
+                    Krajan, Pandansari, Kec. Kedungjajang, Kabupaten Lumajang,
+                    Jawa Timur
+                  </p>
                 </div>
-                <hr class="hr-dotted mt-0" />
-                <div class="d-flex py-2">
-                  <div class="flex-shrink-0">
-                    <i class="bi bi-envelope text-primary fs-4"></i>
-                  </div>
-                  <div class="flex-grow-1 ms-3">
-                    <h5 class="mb-1">Email</h5>
-                    <p>papoyice@gmail.com</p>
-                  </div>
+              </div>
+              <hr class="hr-dotted mt-0" />
+              <div class="d-flex py-2">
+                <div class="flex-shrink-0">
+                  <i class="bi bi-whatsapp text-primary fs-4"></i>
                 </div>
-                <hr class="hr-dotted mt-0" />
-                <div class="d-flex py-2">
-                  <div class="flex-shrink-0">
-                    <i class="bi bi-clock text-primary fs-4"></i>
-                  </div>
-                  <div class="flex-grow-1 ms-3">
-                    <h5 class="mb-1">Jam Operasional</h5>
-                    <p>Senin - Sabtu, 09.00 - 17.00 WIB</p>
-                  </div>
+                <div class="flex-grow-1 ms-3">
+                  <h5 class="mb-1">WhatsApp</h5>
+                  <p>+62 856-0025-4054</p>
+                </div>
+              </div>
+              <hr class="hr-dotted mt-0" />
+              <div class="d-flex py-2">
+                <div class="flex-shrink-0">
+                  <i class="bi bi-envelope text-primary fs-4"></i>
+                </div>
+                <div class="flex-grow-1 ms-3">
+                  <h5 class="mb-1">Email</h5>
+                  <p>papoyice@gmail.com</p>
+                </div>
+              </div>
+              <hr class="hr-dotted mt-0" />
+              <div class="d-flex py-2">
+                <div class="flex-shrink-0">
+                  <i class="bi bi-clock text-primary fs-4"></i>
+                </div>
+                <div class="flex-grow-1 ms-3">
+                  <h5 class="mb-1">Jam Operasional</h5>
+                  <p>Senin - Sabtu, 09.00 - 17.00 WIB</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </main>
+    </div>
+  </main>
 
-    <footer class="footer mt-auto py-4 bg-white">
-      <div class="container">
-        <div
-          class="d-flex flex-column flex-md-row align-items-center align-items-md-left text-body"
-        >
-          <div class="copyright text-center mb-2 mb-md-0">
-            &copy; 2025 -
-            <a
-              href="https://www.instagram.com/papoyice/"
-              target="_blank"
-              class="fw-bolder"
-              >Papoy Ice</a
-            >. All rights reserved.
-          </div>
-          <div class="link ms-md-auto">
-            <a href="https://www.instagram.com/papoyice/" target="_blank"
-              >Terms & Conditions</a
-            >
-          </div>
+  <footer class="footer mt-auto py-4 bg-white">
+    <div class="container">
+      <div class="d-flex flex-column flex-md-row align-items-center align-items-md-left text-body">
+        <div class="copyright text-center mb-2 mb-md-0">
+          &copy; 2025 -
+          <a href="https://www.instagram.com/papoyice/" target="_blank" class="fw-bolder">Papoy Ice</a>. All rights
+          reserved.
+        </div>
+        <div class="link ms-md-auto">
+          <a href="https://www.instagram.com/papoyice/" target="_blank">Terms & Conditions</a>
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="assets/js/custom.js"></script>
-    <script>
-      // Heroes animasi
-      function animateHeroesImg() {
-        const img = document.getElementById("heroes-img");
-        if (!img) return;
-        img.classList.remove("show");
-        void img.offsetWidth;
-        img.classList.add("show");
-      }
-      window.addEventListener("DOMContentLoaded", animateHeroesImg);
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+  <script src="assets/js/custom.js"></script>
+  <script>
+    // Heroes animasi
+    function animateHeroesImg() {
+      const img = document.getElementById("heroes-img");
+      if (!img) return;
+      img.classList.remove("show");
+      void img.offsetWidth;
+      img.classList.add("show");
+    }
+    window.addEventListener("DOMContentLoaded", animateHeroesImg);
 
-      document
-        .getElementById("toggle-dark")
-        .addEventListener("click", function () {
-          document.body.classList.toggle("dark-mode");
-          const icon = this.querySelector("i");
-          const heroesImg = document.getElementById("heroes-img");
-          if (document.body.classList.contains("dark-mode")) {
-            icon.classList.remove("bi-moon");
-            icon.classList.add("bi-brightness-high");
-            if (heroesImg) {
-              heroesImg.src = "assets/img/ImgD.png";
-              heroesImg.onload = animateHeroesImg;
-            }
-          } else {
-            icon.classList.remove("bi-brightness-high");
-            icon.classList.add("bi-moon");
-            if (heroesImg) {
-              heroesImg.src = "assets/img/Img.jpg";
-              heroesImg.onload = animateHeroesImg;
-            }
+    document
+      .getElementById("toggle-dark")
+      .addEventListener("click", function () {
+        document.body.classList.toggle("dark-mode");
+        const icon = this.querySelector("i");
+        const heroesImg = document.getElementById("heroes-img");
+        if (document.body.classList.contains("dark-mode")) {
+          icon.classList.remove("bi-moon");
+          icon.classList.add("bi-brightness-high");
+          if (heroesImg) {
+            heroesImg.src = "assets/img/ImgD.png";
+            heroesImg.onload = animateHeroesImg;
           }
-        });
+        } else {
+          icon.classList.remove("bi-brightness-high");
+          icon.classList.add("bi-moon");
+          if (heroesImg) {
+            heroesImg.src = "assets/img/Img.jpg";
+            heroesImg.onload = animateHeroesImg;
+          }
+        }
+      });
 
-      // Smooth scroll
-      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          e.preventDefault();
-          document.querySelector(this.getAttribute("href")).scrollIntoView({
-            behavior: "smooth",
-          });
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+          behavior: "smooth",
         });
       });
-      function showSlideInOnScroll() {
-        document.querySelectorAll(".slide-in").forEach((el) => {
-          const rect = el.getBoundingClientRect();
-          if (rect.top < window.innerHeight - 60) {
-            el.classList.add("show");
-          }
-        });
-      }
-      window.addEventListener("scroll", showSlideInOnScroll);
-      window.addEventListener("DOMContentLoaded", showSlideInOnScroll);
-
-      document.querySelectorAll('a[href="#about"]').forEach((link) => {
-        link.addEventListener("click", function () {
-          const img = document.querySelector("#about .slide-in");
-          if (img) {
-            img.classList.remove("show");
-            void img.offsetWidth;
-            img.classList.add("show");
-          }
-        });
+    });
+    function showSlideInOnScroll() {
+      document.querySelectorAll(".slide-in").forEach((el) => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 60) {
+          el.classList.add("show");
+        }
       });
-    </script>
-  </body>
+    }
+    window.addEventListener("scroll", showSlideInOnScroll);
+    window.addEventListener("DOMContentLoaded", showSlideInOnScroll);
+
+    document.querySelectorAll('a[href="#about"]').forEach((link) => {
+      link.addEventListener("click", function () {
+        const img = document.querySelector("#about .slide-in");
+        if (img) {
+          img.classList.remove("show");
+          void img.offsetWidth;
+          img.classList.add("show");
+        }
+      });
+    });
+  </script>
+</body>
+
 </html>

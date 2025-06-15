@@ -362,3 +362,10 @@ body.dark-mode .shadow {
   /* contoh: filter untuk gambar */
   filter: brightness(0.8) contrast(1.1);
 }
+.produk-section {
+  background-color: #f0f0f0;
+  border-top: 2px dashed #ddd;
+}
+.dark-mode .produk-section{
+  background-color: #363636;
+}
