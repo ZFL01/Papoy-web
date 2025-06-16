@@ -104,3 +104,24 @@ window.addEventListener('scroll', function() {
     lastNavLink?.classList.add('active');
   }
 });
+
+  const slides = document.querySelectorAll(".papoy-slide");
+  let current = 0;
+
+  function showSlide(index) {
+    slides.forEach((img, i) => {
+      img.classList.remove("show", "hide", "d-none");
+      if (i === index) {
+        img.classList.add("show");
+      } else {
+        img.classList.add("hide");
+      }
+    });
+  }
+
+  showSlide(current); // tampilkan pertama kali
+
+  setInterval(() => {
+    current = (current + 1) % slides.length;
+    showSlide(current);
+  }, 3000); // Ganti setiap 3 detik
