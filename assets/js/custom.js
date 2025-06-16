@@ -41,6 +41,17 @@ document.addEventListener("DOMContentLoaded", function () {
     const id = currentSection.getAttribute('id');
     const navLink = document.querySelector(`.navbar-nav .nav-link[href="#${id}"]`);
     if (navLink) navLink.classList.add('active');
+
+    // Jika mentok ke bawah, paksa menu terakhir aktif
+    if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 2) {
+      document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+        link.classList.remove('active');
+      });
+      const lastSection = sections[sections.length - 1];
+      const lastId = lastSection.getAttribute('id');
+      const lastNavLink = document.querySelector(`.navbar-nav .nav-link[href="#${lastId}"]`);
+      if (lastNavLink) lastNavLink.classList.add('active');
+    }
   }
 
   window.addEventListener('scroll', updateActiveNav);
@@ -72,4 +83,19 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+
+  // Sembunyikan menu tertentu di home, tampilkan saat scroll
+  // Contoh: .nav-layanan
+  const navLayanan = document.querySelector('.nav-layanan');
+  if (navLayanan) {
+    function toggleLayananMenu() {
+      if (window.scrollY > 100) {
+        navLayanan.style.display = 'block';
+      } else {
+        navLayanan.style.display = 'none';
+      }
+    }
+    window.addEventListener('scroll', toggleLayananMenu);
+    toggleLayananMenu();
+  }
 });

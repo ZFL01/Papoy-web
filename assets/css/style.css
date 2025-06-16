@@ -381,3 +381,77 @@ body.dark-mode .shadow {
 .dark-mode .produk-section {
   background-color: #363636;
 }
+/* Section background dan pemisah */
+
+
+#services {
+  background: #fffbe7;
+  border-radius: 32px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.03);
+}
+
+#about {
+  background: #f4f8ff;
+  border-radius: 32px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.03);
+}
+
+#produk, #portfolio {
+  background: #fff;
+  border-radius: 32px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.03);
+}
+
+#contact {
+  background: #f8fafc;
+  border-radius: 32px 32px 0 0;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.03);
+}
+body.dark-mode #contact {
+  background: #23272b !important;
+}
+
+/* Spasi antar section */
+section,
+ #services, #about, #produk, #portfolio, #contact {
+  margin-bottom: 48px;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+/* Garis pemisah antar section */
+.section-divider {
+  border: none;
+  border-top: 2px dashed #e0e0e0;
+  margin: 0;
+  width: 100%;
+}
+
+/* Dark mode untuk section */
+
+
+body.dark-mode #services {
+  background: #2c2f36;
+}
+
+body.dark-mode #about,
+body.dark-mode #produk,
+body.dark-mode #portfolio {
+  background: #232526;
+}
+
+body.dark-mode .section-divider {
+  border-top: 2px dashed #444;
+}
+body.dark-mode .footer {
+  background: #23272b !important;
+  color: #f1f1f1 !important;
+}
+
+body.dark-mode .footer a {
+  color: #90caf9 !important;
+}
+
+body.dark-mode .footer .copyright {
+  color: #bdbdbd !important;
+}
