@@ -122,7 +122,7 @@
       </div>
     </div>
 
-    <div id="services" class="container text-center py-5">
+    <div id="services" class="container text-center py-5 mt-5">
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <h3 class="fw-bold lh-2 mb-3">
@@ -196,10 +196,13 @@
         </div>
       </div>
       <div class="row align-items-center text-start g-5 py-4">
-        <div class="col-lg-5 position-relative">
+        <div class="col-lg-5 position-relative overflow-hidden">
           <div class="bg-about position-absolute top-0 start-0 w-100 h-100 rounded-4"></div>
-          <img src="assets/img/PapoyImg.jpg" class="d-block mx-lg-auto img-fluid position-relative slide-in-left"
-            alt="Tentang Papoy Ice" loading="lazy" style="z-index: 1" />
+          <div class="papoy-slider position-relative" style="height: 450px;">
+            <img src="assets/img/PapoyImg.jpg" class="papoy-slide img-fluid position-absolute show" />
+            <img src="assets/img/PaPoy on hand.png" class="papoy-slide img-fluid position-absolute" />
+            <img src="assets/img/PaPoy thank.png" class="papoy-slide img-fluid position-absolute" />
+          </div>
         </div>
         <div class="col-lg-7">
           <h4 class="fw-bold lh-2 mb-3">Kenapa Memilih Papoy Ice?</h4>
@@ -255,7 +258,7 @@
               <img src="assets/img/chocolate-1.png" alt="Chocolate Blend"
                 class="card-img-top img-fluid rounded-4 mb-3" />
               <p class="fw-semibold mt-auto mb-3">
-                <i class="bi bi-cup-hot text-primary me-2"></i>Chocolate Ice Blend
+                <i class="bi bi-cup-hot text-cocho me-2"></i>Chocolate Ice Blend
               </p>
             </div>
           </div>
@@ -268,7 +271,7 @@
               class="card-body d-flex flex-column align-items-center justify-content-between h-100 p-4 pb-0 text-center">
               <img src="assets/img/Taro.png" alt="Taro Ice Blend" class="card-img-top img-fluid rounded-4 mb-3" />
               <p class="fw-semibold mt-auto mb-3">
-                <i class="bi bi-cup-hot text-purple me-2"></i>Taro Ice Blend
+                <i class="bi bi-cup-hot text-pink me-2"></i>Taro Ice Blend
               </p>
             </div>
           </div>
@@ -282,7 +285,7 @@
               <img src="assets/img/Strawberry.png" alt="Strawberry Ice Blend"
                 class="card-img-top img-fluid rounded-4 mb-3" />
               <p class="fw-semibold mt-auto mb-3">
-                <i class="bi bi-cup-hot text-danger me-2"></i>Strawberry Ice Blend
+                <i class="bi bi-cup-hot text-red me-2"></i>Strawberry Ice Blend
               </p>
             </div>
           </div>
@@ -295,7 +298,7 @@
               class="card-body d-flex flex-column align-items-center justify-content-between h-100 p-4 pb-0 text-center">
               <img src="assets/img/Mangga.png" alt="Mangga Ice Blend" class="card-img-top img-fluid rounded-4 mb-3" />
               <p class="fw-semibold mt-auto mb-3">
-                <i class="bi bi-cup-hot text-warning me-2"></i>Mangga Ice Blend
+                <i class="bi bi-cup-hot text-yellow me-2"></i>Mangga Ice Blend
               </p>
             </div>
           </div>
@@ -321,7 +324,7 @@
               class="card-body d-flex flex-column align-items-center justify-content-between h-100 p-4 pb-0 text-center">
               <img src="assets/img/Vanilla.png" alt="Vanilla Ice Blend" class="card-img-top img-fluid rounded-4 mb-3" />
               <p class="fw-semibold mt-auto mb-3">
-                <i class="bi bi-cup-hot text-success me-2"></i>Vanilla Ice Blend
+                <i class="bi bi-cup-hot text-vanilla me-2"></i>Vanilla Ice Blend
               </p>
             </div>
           </div>
@@ -334,40 +337,40 @@
               class="card-body d-flex flex-column align-items-center justify-content-between h-100 p-4 pb-0 text-center">
               <img src="assets/img/Jeruk.png" alt="Orange Ice Blend" class="card-img-top img-fluid rounded-4 mb-3" />
               <p class="fw-semibold mt-auto mb-3">
-                <i class="bi bi-cup-hot text-success me-2"></i>Orange Ice Blend
+                <i class="bi bi-cup-hot text-orange me-2"></i>Orange Ice Blend
               </p>
             </div>
           </div>
         </div>
-      <!-- 8 -->
-      <div class="col-lg-4 mb-4">
-        <div class="card h-100 border-0 rounded-4 shadow-sm" data-bs-toggle="modal" data-bs-target="#BlueberryModal"
-          style="cursor: pointer;">
-          <div
-            class="card-body d-flex flex-column align-items-center justify-content-between h-100 p-4 pb-0 text-center">
-            <img src="assets/img/Blueberry.png" alt="Blueberry Ice Blend"
-              class="card-img-top img-fluid rounded-4 mb-3" />
-            <p class="fw-semibold mt-auto mb-3">
-              <i class="bi bi-cup-hot text-success me-2"></i>Blueberry Ice Blend
-            </p>
+        <!-- 8 -->
+        <div class="col-lg-4 mb-4">
+          <div class="card h-100 border-0 rounded-4 shadow-sm" data-bs-toggle="modal" data-bs-target="#BlueberryModal"
+            style="cursor: pointer;">
+            <div
+              class="card-body d-flex flex-column align-items-center justify-content-between h-100 p-4 pb-0 text-center">
+              <img src="assets/img/Blueberry.png" alt="Blueberry Ice Blend"
+                class="card-img-top img-fluid rounded-4 mb-3" />
+              <p class="fw-semibold mt-auto mb-3">
+                <i class="bi bi-cup-hot text-purple me-2"></i>Blueberry Ice Blend
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- 9 -->
+        <div class="col-lg-4 mb-4">
+          <div class="card h-100 border-0 rounded-4 shadow-sm" data-bs-toggle="modal" data-bs-target="#TelangModal"
+            style="cursor: pointer;">
+            <div
+              class="card-body d-flex flex-column align-items-center justify-content-between h-100 p-4 pb-0 text-center">
+              <img src="assets/img/BungaTelang.png" alt="Butterfly Pea Iced Tea"
+                class="card-img-top img-fluid rounded-4 mb-3" />
+              <p class="fw-semibold mt-auto mb-3">
+                <i class="bi bi-cup-hot text-primary me-2"></i>Butterfly Pea Iced Tea
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    <!-- 9 -->
-      <div class="col-lg-4 mb-4">
-        <div class="card h-100 border-0 rounded-4 shadow-sm" data-bs-toggle="modal" data-bs-target="#TelangModal"
-          style="cursor: pointer;">
-          <div
-            class="card-body d-flex flex-column align-items-center justify-content-between h-100 p-4 pb-0 text-center">
-            <img src="assets/img/BungaTelang.png" alt="Butterfly Pea Iced Tea"
-              class="card-img-top img-fluid rounded-4 mb-3" />
-            <p class="fw-semibold mt-auto mb-3">
-              <i class="bi bi-cup-hot text-success me-2"></i>Butterfly Pea Iced Tea
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
     </div>
     <!-- Modal bunga Telang Ice Blend -->
     <div class="modal fade" id="TelangModal" tabindex="-1" aria-labelledby="BungaTelangModalLabel" aria-hidden="true">
@@ -380,7 +383,7 @@
                   letter-spacing: 0.5px;
                   color: #222;
                 ">
-              <i class="bi bi-cup-hot text-purple me-2"></i>Butterfly Pea Iced Tea
+              <i class="bi bi-cup-hot text-primary me-2"></i>Butterfly Pea Iced Tea
             </h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
@@ -444,7 +447,7 @@
                   letter-spacing: 0.5px;
                   color: #222;
                 ">
-              <i class="bi bi-cup-hot text-purple me-2"></i>Orange Ice Blend
+              <i class="bi bi-cup-hot text-orange me-2"></i>Orange Ice Blend
             </h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
@@ -476,7 +479,7 @@
                   letter-spacing: 0.5px;
                   color: #222;
                 ">
-              <i class="bi bi-cup-hot text-purple me-2"></i>Taro Ice Blend
+              <i class="bi bi-cup-hot text-pink me-2"></i>Taro Ice Blend
             </h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
@@ -508,7 +511,7 @@
                   letter-spacing: 0.5px;
                   color: #222;
                 ">
-              <i class="bi bi-cup-hot text-primary me-2"></i>Chocolate Ice
+              <i class="bi bi-cup-hot text-cocho me-2"></i>Chocolate Ice
               Blend
             </h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -542,7 +545,7 @@
                   letter-spacing: 0.5px;
                   color: #222;
                 ">
-              <i class="bi bi-cup-hot text-success me-2"></i>Vanilla Ice Blend
+              <i class="bi bi-cup-hot text-vanilla me-2"></i>Vanilla Ice Blend
             </h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
@@ -574,7 +577,7 @@
                   letter-spacing: 0.5px;
                   color: #222;
                 ">
-              <i class="bi bi-cup-hot text-danger me-2"></i>Strawberry Ice
+              <i class="bi bi-cup-hot text-red me-2"></i>Strawberry Ice
               Blend
             </h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -607,7 +610,7 @@
                   letter-spacing: 0.5px;
                   color: #222;
                 ">
-              <i class="bi bi-cup-hot text-warning me-2"></i>Mangga Ice Blend
+              <i class="bi bi-cup-hot text-yellow me-2"></i>Mangga Ice Blend
             </h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
@@ -656,148 +659,12 @@
             </p>
           </div>
           <div class="modal-footer border-0 pt-0">
-
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Modal Chocolate Ice Blend -->
-    <div class="modal fade" id="chocolateModal" tabindex="-1" aria-labelledby="chocolateModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content rounded-4">
-          <div class="modal-header border-0 pb-0">
-            <h5 class="modal-title fw-bold" id="chocolateModalLabel" style="
-                  font-family: 'Raleway', sans-serif;
-                  font-size: 2rem;
-                  letter-spacing: 0.5px;
-                  color: #222;
-                ">
-              <i class="bi bi-cup-hot text-primary me-2"></i>Chocolate Ice
-              Blend
-            </h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body text-center">
-            <img src="assets/img/chocolate-1.png" alt="Chocolate Ice Blend" class="img-fluid rounded-4 mb-3 shadow"
-              style="max-width: 220px" />
-            <p class="mt-3 mb-0" style="
-                  font-family: 'Raleway', sans-serif;
-                  font-size: 1.15rem;
-                  color: #444;
-                ">
-              Ice blend rasa coklat premium, manis dan nikmat untuk semua
-              suasana!
-            </p>
-          </div>
-          <div class="modal-footer border-0 pt-0">
-
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Modal Strawberry Ice Blend -->
-    <div class="modal fade" id="strawberryModal" tabindex="-1" aria-labelledby="strawberryModalLabel"
-      aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content rounded-4">
-          <div class="modal-header border-0 pb-0">
-            <h5 class="modal-title fw-bold" id="strawberryModalLabel" style="
-                  font-family: 'Raleway', sans-serif;
-                  font-size: 2rem;
-                  letter-spacing: 0.5px;
-                  color: #222;
-                ">
-              <i class="bi bi-cup-hot text-danger me-2"></i>Strawberry Ice
-              Blend
-            </h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body text-center">
-            <img src="assets/img/Strawberry.png" alt="Strawberry Ice Blend" class="img-fluid rounded-4 mb-3 shadow"
-              style="max-width: 220px" />
-            <p class="mt-3 mb-0" style="
-                  font-family: 'Raleway', sans-serif;
-                  font-size: 1.15rem;
-                  color: #444;
-                ">
-              Kesegaran buah stroberi asli dalam setiap tegukan ice blend ini!
-            </p>
-          </div>
-          <div class="modal-footer border-0 pt-0">
 
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal Mangga Ice Blend -->
-    <div class="modal fade" id="manggaModal" tabindex="-1" aria-labelledby="manggaModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content rounded-4">
-          <div class="modal-header border-0 pb-0">
-            <h5 class="modal-title fw-bold" id="manggaModalLabel" style="
-                  font-family: 'Raleway', sans-serif;
-                  font-size: 2rem;
-                  letter-spacing: 0.5px;
-                  color: #222;
-                ">
-              <i class="bi bi-cup-hot text-warning me-2"></i>Mangga Ice Blend
-            </h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body text-center">
-            <img src="assets/img/Mangga.png" alt="Mangga Ice Blend" class="img-fluid rounded-4 mb-3 shadow"
-              style="max-width: 220px" />
-            <p class="mt-3 mb-0" style="
-                  font-family: 'Raleway', sans-serif;
-                  font-size: 1.15rem;
-                  color: #444;
-                ">
-              Rasakan segarnya mangga pilihan dalam ice blend yang
-              menyegarkan!
-            </p>
-          </div>
-          <div class="modal-footer border-0 pt-0">
-
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal Matcha Ice Blend -->
-    <div class="modal fade" id="matchaModal" tabindex="-1" aria-labelledby="matchaModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content rounded-4">
-          <div class="modal-header border-0 pb-0">
-            <h5 class="modal-title fw-bold" id="matchaModalLabel" style="
-                  font-family: 'Raleway', sans-serif;
-                  font-size: 2rem;
-                  letter-spacing: 0.5px;
-                  color: #222;
-                ">
-              <i class="bi bi-cup-hot text-success me-2"></i>Matcha Ice Blend
-            </h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body text-center">
-            <img src="assets/img/Matcha.png" alt="Matcha Ice Blend" class="img-fluid rounded-4 mb-3 shadow"
-              style="max-width: 220px" />
-            <p class="mt-3 mb-0" style="
-                  font-family: 'Raleway', sans-serif;
-                  font-size: 1.15rem;
-                  color: #444;
-                ">
-              Ice blend matcha dengan aroma teh hijau yang khas dan
-              menenangkan.
-            </p>
-          </div>
-          <div class="modal-footer border-0 pt-0">
-
-          </div>
-        </div>
-      </div>
-    </div>
     <div id="contact" class="container text-center pt-4 pb-5">
       <div class="row">
         <div class="col-lg-8 mx-auto">
