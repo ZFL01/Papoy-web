@@ -23,6 +23,10 @@ body {
   transition: all 0.4s;
 }
 
+html {
+  scroll-padding-top: 96px;
+}
+
 .navbar-light .navbar-nav .nav-link:hover {
   color: #0d6efd !important;
 }
@@ -261,6 +265,7 @@ body {
     background-position: 100% 50%;
   }
 }
+
 @keyframes rainbow-move {
   0% {
     background-position: 0% 50%;
@@ -270,6 +275,7 @@ body {
     background-position: 100% 50%;
   }
 }
+
 body.dark-mode {
   background: #181a1b;
   color: #e0e0e0;
@@ -300,18 +306,16 @@ body.dark-mode .btn-primary:focus {
 }
 
 body.dark-mode .rainbow-underline::after {
-  background: linear-gradient(
-    90deg,
-    #8e54e9,
-    #4776e6,
-    #43cea2,
-    #f7971e,
-    #f953c6,
-    #b91d73,
-    #355c7d,
-    #43cea2,
-    #8e54e9
-  );
+  background: linear-gradient(90deg,
+      #8e54e9,
+      #4776e6,
+      #43cea2,
+      #f7971e,
+      #f953c6,
+      #b91d73,
+      #355c7d,
+      #43cea2,
+      #8e54e9);
   background-size: 500% 100%;
   animation: rainbow-move 4.5s linear infinite;
 }
@@ -328,12 +332,14 @@ body.dark-mode .modal-title {
 }
 
 body.dark-mode .shadow {
-  box-shadow: 0 2px 16px rgba(0,0,0,0.7) !important;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.7) !important;
 }
+
 .dark-mode {
   background-color: #181a1b !important;
   color: #f1f1f1 !important;
 }
+
 .dark-mode .modal-content,
 .dark-mode .card,
 .dark-mode .rounded-4,
@@ -343,6 +349,7 @@ body.dark-mode .shadow {
   background-color: #23272b !important;
   color: #f1f1f1 !important;
 }
+
 .dark-mode .modal-title,
 .dark-mode p,
 .dark-mode h5,
@@ -350,22 +357,27 @@ body.dark-mode .shadow {
 .dark-mode .lead {
   color: #f1f1f1 !important;
 }
+
 .dark-mode .modal-header,
 .dark-mode .modal-footer {
   border-color: #333 !important;
 }
+
 .dark-mode .btn-close {
   filter: invert(1);
 }
+
 .dark-mode .slide-in,
 .dark-mode .slide-in-left {
   /* contoh: filter untuk gambar */
   filter: brightness(0.8) contrast(1.1);
 }
+
 .produk-section {
   background-color: #f0f0f0;
   border-top: 2px dashed #ddd;
 }
-.dark-mode .produk-section{
+
+.dark-mode .produk-section {
   background-color: #363636;
 }
